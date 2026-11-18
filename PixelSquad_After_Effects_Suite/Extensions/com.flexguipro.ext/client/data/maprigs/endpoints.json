@@ -1,0 +1,24 @@
+{
+  "v": 1,
+  "updated": "2026-10-26",
+  "remote": [],
+  "services": {
+    "nominatim":   { "urls": ["https://nominatim.openstreetmap.org/"], "concurrency": 1, "gapMs": 1100, "userTriggeredOnly": true,
+                     "terms": "https://operations.osmfoundation.org/policies/nominatim/" },
+    "photon":      { "urls": ["https://photon.komoot.io/api/"], "concurrency": 1, "gapMs": 300, "enabled": true, "optIn": true },
+    "overpass":    { "urls": ["https://overpass.private.coffee/api/interpreter", "https://overpass-api.de/api/interpreter"],
+                     "optInUrls": ["https://maps.mail.ru/osm/tools/overpass/api/interpreter"],
+                     "concurrency": 1, "gapMs": 0, "hold429Ms": 30000, "timeoutS": 60 },
+    "routing":     { "osrm": ["https://routing.openstreetmap.de/routed-"], "valhalla": ["https://valhalla1.openstreetmap.de/route"],
+                     "concurrency": 1, "gapMs": 1000, "cacheDays": 30 },
+    "geoboundaries": { "urls": ["https://www.geoboundaries.org/api/current/gbOpen/"], "cacheDays": 30 },
+    "naturalEarth":  { "urls": ["https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/",
+                                "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/"], "cacheDays": 30 },
+    "openfreemap": { "urls": ["https://tiles.openfreemap.org/planet"], "concurrency": 4, "maxTilesPerBake": 3000, "maxBytesPerBake": 52428800 },
+    "eox":         { "urls": ["https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless_3857/default/g/{z}/{y}/{x}.jpg"], "concurrency": 4 },
+    "gibs":        { "urls": ["https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/"], "concurrency": 6 },
+    "usgs":        { "urls": ["https://basemap.nationalmap.gov/arcgis/rest/services/"], "concurrency": 6 },
+    "opentopomap": { "urls": ["https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"], "concurrency": 2 },
+    "terrarium":   { "urls": ["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/"], "concurrency": 6 }
+  }
+}

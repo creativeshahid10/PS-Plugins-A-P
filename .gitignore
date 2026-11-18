@@ -1,0 +1,8 @@
+# Legacy archive exceeding GitHub 100MB single-file limit (replaced by updated Suite folders & ZIPs)
+Master Plugins After & Pro.zip
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

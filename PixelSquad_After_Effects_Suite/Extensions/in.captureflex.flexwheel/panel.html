@@ -1,0 +1,58 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>PixelSquad Wheel</title>
+<style>
+  :root{--accent:#00D2FF}
+  html,body{margin:0;height:100%;background:#1b1b1f;color:#ececf1;font:12.5px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-user-select:none;cursor:default}
+  .wrap{padding:14px;display:flex;flex-direction:column;gap:9px}
+  .top{display:flex;align-items:center;gap:9px;margin-bottom:2px}
+  .mark{width:22px;height:22px;border-radius:50%;border:2px solid var(--accent);position:relative;flex:none}
+  .mark:before{content:"";position:absolute;inset:5px;border-radius:50%;background:var(--accent)}
+  b{font-size:13.5px}
+  .pill{margin-left:auto;font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:99px;border:1px solid #33333f;color:#9a9aa8}
+  .pill.ok{color:#4ecd8a} .pill.bad{color:#e8a840}
+  button{font:inherit;color:inherit;background:#25252d;border:1px solid #33333f;border-radius:8px;padding:7px 10px;cursor:pointer;text-align:left}
+  button:hover{border-color:var(--accent)}
+  button.primary{background:var(--accent);border-color:var(--accent);color:#101010;font-weight:700}
+  p{margin:2px 0 0;color:#8b8b99;font-size:11.5px}
+</style></head>
+<body><div class="wrap">
+  <div class="top"><div class="mark"></div><b>PixelSquad Wheel</b><span class="pill" id="pill">Starting…</span></div>
+  <button class="primary" data-c="settings">Open Settings…</button>
+  <button data-c="summon">Show the wheel</button>
+  <button data-c="search">Search effects…</button>
+  <p id="hint">Hold your hotkey — or right-click and hold — then flick and release. You can close this panel: the wheel keeps running with the app.</p>
+</div>
+<script>
+(function () {
+  var cep = window.__adobe_cep__; if (!cep) return;
+  var env = {}; try { env = JSON.parse(cep.getHostEnvironment()); } catch (e) { }
+  var APP = env.appId === "AEFT" ? "AEFT" : "PPRO", HOSTNAME = APP === "AEFT" ? "After Effects" : "Premiere Pro";
+  var CMD = "in.captureflex.flexwheel.cmd", STATUS = "in.captureflex.flexwheel.status", heard = false;
+  function cmd(c) { cep.dispatchEvent({ type: CMD, scope: "APPLICATION", appId: APP, extensionId: "in.captureflex.flexwheel.panel", data: c }); }
+  function show(st) {
+    var pill = document.getElementById("pill"), hint = document.getElementById("hint");
+    if (st.error) { pill.textContent = "Problem"; pill.className = "pill bad"; hint.textContent = st.error; return; }
+    if (!st.up) { pill.textContent = "Starting…"; pill.className = "pill"; return; }
+    pill.textContent = st.licensed ? "Running" : "Locked"; pill.className = "pill " + (st.licensed ? "ok" : "bad");
+    if (!st.licensed) hint.textContent = "Flex Wheel isn't activated yet. Open Settings and paste your license key.";
+  }
+  cep.addEventListener(STATUS, function (ev) { heard = true; try { show(typeof ev.data === "string" ? JSON.parse(ev.data) : ev.data); } catch (e) { } }, null);
+  document.addEventListener("click", function (e) { var b = e.target.closest("[data-c]"); if (b) cmd(b.getAttribute("data-c")); });
+  cmd("ping");
+  // The background extension normally starts with the host. If nothing answers, ask
+  // CEP to start it; if that is refused too, host the bridge here so the wheel still works.
+  setTimeout(function () {
+    if (heard) return;
+    try { cep.requestOpenExtension("in.captureflex.flexwheel.bg", ""); } catch (e) { }
+    setTimeout(function () {
+      cmd("ping");
+      setTimeout(function () {
+        if (heard) return;
+        var s = document.createElement("script"); s.src = "bridge.js";
+        s.onload = function () { setInterval(function () { show(window.__flexWheelBridge || {}); }, 1000); };
+        document.body.appendChild(s);
+      }, 1200);
+    }, 1200);
+  }, 900);
+})();
+</script></body></html>

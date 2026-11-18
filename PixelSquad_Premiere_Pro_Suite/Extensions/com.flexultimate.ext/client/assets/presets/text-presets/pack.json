@@ -1,0 +1,100 @@
+{
+  "id": "text-presets",
+  "label": "Text Presets",
+  "kind": "mogrt",
+  "frame": "wide",
+  "canvas": "#202120",
+  "library": "text-presets",
+  "items": [
+    {
+      "id": "txt-preset-01",
+      "name": "Text Preset 01",
+      "media": "Text Preset_01.mogrt",
+      "thumb": "thumbs/txt-preset-01.png"
+    },
+    {
+      "id": "txt-preset-02",
+      "name": "Text Preset 02",
+      "media": "Text Preset_02.mogrt",
+      "thumb": "thumbs/txt-preset-02.png"
+    },
+    {
+      "id": "txt-preset-03",
+      "name": "Text Preset 03",
+      "media": "Text Preset_03.mogrt",
+      "thumb": "thumbs/txt-preset-03.png"
+    },
+    {
+      "id": "txt-preset-04",
+      "name": "Text Preset 04",
+      "media": "Text Preset_04.mogrt",
+      "thumb": "thumbs/txt-preset-04.png"
+    },
+    {
+      "id": "txt-preset-05",
+      "name": "Text Preset 05",
+      "media": "Text Preset_05.mogrt",
+      "thumb": "thumbs/txt-preset-05.png"
+    },
+    {
+      "id": "txt-preset-06",
+      "name": "Text Preset 06",
+      "media": "Text Preset_06.mogrt",
+      "thumb": "thumbs/txt-preset-06.png"
+    },
+    {
+      "id": "txt-preset-07",
+      "name": "Text Preset 07",
+      "media": "Text Preset_07.mogrt",
+      "thumb": "thumbs/txt-preset-07.png"
+    },
+    {
+      "id": "txt-preset-08",
+      "name": "Text Preset 08",
+      "media": "Text Preset_08.mogrt",
+      "thumb": "thumbs/txt-preset-08.png"
+    },
+    {
+      "id": "txt-preset-09",
+      "name": "Text Preset 09",
+      "media": "Text Preset_09.mogrt",
+      "thumb": "thumbs/txt-preset-09.png"
+    },
+    {
+      "id": "txt-animation-pro",
+      "name": "Text Animation PRO",
+      "media": "Text Animation PRO.mogrt",
+      "thumb": "thumbs/txt-animation-pro.png"
+    },
+    {
+      "id": "txt-box-frame",
+      "name": "Box Frame",
+      "media": "Box Frame.mogrt",
+      "thumb": "thumbs/txt-box-frame.png"
+    },
+    {
+      "id": "txt-glow-spot",
+      "name": "Glow Spot",
+      "media": "Glow Spot.mogrt",
+      "thumb": "thumbs/txt-glow-spot.png"
+    },
+    {
+      "id": "txt-lower-third",
+      "name": "Lower Third",
+      "media": "Lower Third.mogrt",
+      "thumb": "thumbs/txt-lower-third.png"
+    },
+    {
+      "id": "txt-text-box-preset",
+      "name": "Text Box Preset",
+      "media": "Text Box Preset.mogrt",
+      "thumb": "thumbs/txt-text-box-preset.png"
+    },
+    {
+      "id": "txt-title-text",
+      "name": "Title Text",
+      "media": "Title Text.mogrt",
+      "thumb": "thumbs/txt-title-text.png"
+    }
+  ]
+}

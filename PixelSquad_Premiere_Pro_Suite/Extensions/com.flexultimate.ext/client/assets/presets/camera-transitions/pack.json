@@ -1,0 +1,399 @@
+{
+  "id": "camera-transitions",
+  "label": "Camera Transitions",
+  "kind": "mogrt",
+  "frame": "wide",
+  "canvas": "#202120",
+  "library": "camera-transitions",
+  "groups": [
+    "Horizontal",
+    "Vertical"
+  ],
+  "items": [
+    {
+      "id": "cam-horizontal-01",
+      "name": "Camera Transition Horizontal 01",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_01.mogrt",
+      "thumb": "thumbs/cam-horizontal-01.png"
+    },
+    {
+      "id": "cam-horizontal-02",
+      "name": "Camera Transition Horizontal 02",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_02.mogrt",
+      "thumb": "thumbs/cam-horizontal-02.png"
+    },
+    {
+      "id": "cam-horizontal-03",
+      "name": "Camera Transition Horizontal 03",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_03.mogrt",
+      "thumb": "thumbs/cam-horizontal-03.png"
+    },
+    {
+      "id": "cam-horizontal-04",
+      "name": "Camera Transition Horizontal 04",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_04.mogrt",
+      "thumb": "thumbs/cam-horizontal-04.png"
+    },
+    {
+      "id": "cam-horizontal-05",
+      "name": "Camera Transition Horizontal 05",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_05.mogrt",
+      "thumb": "thumbs/cam-horizontal-05.png"
+    },
+    {
+      "id": "cam-horizontal-06",
+      "name": "Camera Transition Horizontal 06",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_06.mogrt",
+      "thumb": "thumbs/cam-horizontal-06.png"
+    },
+    {
+      "id": "cam-horizontal-07",
+      "name": "Camera Transition Horizontal 07",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_07.mogrt",
+      "thumb": "thumbs/cam-horizontal-07.png"
+    },
+    {
+      "id": "cam-horizontal-08",
+      "name": "Camera Transition Horizontal 08",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_08.mogrt",
+      "thumb": "thumbs/cam-horizontal-08.png"
+    },
+    {
+      "id": "cam-horizontal-09",
+      "name": "Camera Transition Horizontal 09",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_09.mogrt",
+      "thumb": "thumbs/cam-horizontal-09.png"
+    },
+    {
+      "id": "cam-horizontal-10",
+      "name": "Camera Transition Horizontal 10",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_10.mogrt",
+      "thumb": "thumbs/cam-horizontal-10.png"
+    },
+    {
+      "id": "cam-horizontal-11",
+      "name": "Camera Transition Horizontal 11",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_11.mogrt",
+      "thumb": "thumbs/cam-horizontal-11.png"
+    },
+    {
+      "id": "cam-horizontal-12",
+      "name": "Camera Transition Horizontal 12",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_12.mogrt",
+      "thumb": "thumbs/cam-horizontal-12.png"
+    },
+    {
+      "id": "cam-horizontal-13",
+      "name": "Camera Transition Horizontal 13",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_13.mogrt",
+      "thumb": "thumbs/cam-horizontal-13.png"
+    },
+    {
+      "id": "cam-horizontal-14",
+      "name": "Camera Transition Horizontal 14",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_14.mogrt",
+      "thumb": "thumbs/cam-horizontal-14.png"
+    },
+    {
+      "id": "cam-horizontal-15",
+      "name": "Camera Transition Horizontal 15",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_15.mogrt",
+      "thumb": "thumbs/cam-horizontal-15.png"
+    },
+    {
+      "id": "cam-horizontal-16",
+      "name": "Camera Transition Horizontal 16",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_16.mogrt",
+      "thumb": "thumbs/cam-horizontal-16.png"
+    },
+    {
+      "id": "cam-horizontal-17",
+      "name": "Camera Transition Horizontal 17",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_17.mogrt",
+      "thumb": "thumbs/cam-horizontal-17.png"
+    },
+    {
+      "id": "cam-horizontal-18",
+      "name": "Camera Transition Horizontal 18",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_18.mogrt",
+      "thumb": "thumbs/cam-horizontal-18.png"
+    },
+    {
+      "id": "cam-horizontal-19",
+      "name": "Camera Transition Horizontal 19",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_19.mogrt",
+      "thumb": "thumbs/cam-horizontal-19.png"
+    },
+    {
+      "id": "cam-horizontal-20",
+      "name": "Camera Transition Horizontal 20",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_20.mogrt",
+      "thumb": "thumbs/cam-horizontal-20.png"
+    },
+    {
+      "id": "cam-horizontal-21",
+      "name": "Camera Transition Horizontal 21",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_21.mogrt",
+      "thumb": "thumbs/cam-horizontal-21.png"
+    },
+    {
+      "id": "cam-horizontal-22",
+      "name": "Camera Transition Horizontal 22",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_22.mogrt",
+      "thumb": "thumbs/cam-horizontal-22.png"
+    },
+    {
+      "id": "cam-horizontal-23",
+      "name": "Camera Transition Horizontal 23",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_23.mogrt",
+      "thumb": "thumbs/cam-horizontal-23.png"
+    },
+    {
+      "id": "cam-horizontal-24",
+      "name": "Camera Transition Horizontal 24",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_24.mogrt",
+      "thumb": "thumbs/cam-horizontal-24.png"
+    },
+    {
+      "id": "cam-horizontal-25",
+      "name": "Camera Transition Horizontal 25",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_25.mogrt",
+      "thumb": "thumbs/cam-horizontal-25.png"
+    },
+    {
+      "id": "cam-horizontal-26",
+      "name": "Camera Transition Horizontal 26",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_26.mogrt",
+      "thumb": "thumbs/cam-horizontal-26.png"
+    },
+    {
+      "id": "cam-horizontal-27",
+      "name": "Camera Transition Horizontal 27",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_27.mogrt",
+      "thumb": "thumbs/cam-horizontal-27.png"
+    },
+    {
+      "id": "cam-horizontal-28",
+      "name": "Camera Transition Horizontal 28",
+      "group": "Horizontal",
+      "media": "Horizontal/Camera Transition_Horizontal_28.mogrt",
+      "thumb": "thumbs/cam-horizontal-28.png"
+    },
+    {
+      "id": "cam-vertical-01",
+      "name": "Camera Transition Vertical 01",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_01.mogrt",
+      "thumb": "thumbs/cam-vertical-01.png"
+    },
+    {
+      "id": "cam-vertical-02",
+      "name": "Camera Transition Vertical 02",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_02.mogrt",
+      "thumb": "thumbs/cam-vertical-02.png"
+    },
+    {
+      "id": "cam-vertical-03",
+      "name": "Camera Transition Vertical 03",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_03.mogrt",
+      "thumb": "thumbs/cam-vertical-03.png"
+    },
+    {
+      "id": "cam-vertical-04",
+      "name": "Camera Transition Vertical 04",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_04.mogrt",
+      "thumb": "thumbs/cam-vertical-04.png"
+    },
+    {
+      "id": "cam-vertical-05",
+      "name": "Camera Transition Vertical 05",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_05.mogrt",
+      "thumb": "thumbs/cam-vertical-05.png"
+    },
+    {
+      "id": "cam-vertical-06",
+      "name": "Camera Transition Vertical 06",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_06.mogrt",
+      "thumb": "thumbs/cam-vertical-06.png"
+    },
+    {
+      "id": "cam-vertical-07",
+      "name": "Camera Transition Vertical 07",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_07.mogrt",
+      "thumb": "thumbs/cam-vertical-07.png"
+    },
+    {
+      "id": "cam-vertical-08",
+      "name": "Camera Transition Vertical 08",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_08.mogrt",
+      "thumb": "thumbs/cam-vertical-08.png"
+    },
+    {
+      "id": "cam-vertical-09",
+      "name": "Camera Transition Vertical 09",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_09.mogrt",
+      "thumb": "thumbs/cam-vertical-09.png"
+    },
+    {
+      "id": "cam-vertical-10",
+      "name": "Camera Transition Vertical 10",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_10.mogrt",
+      "thumb": "thumbs/cam-vertical-10.png"
+    },
+    {
+      "id": "cam-vertical-11",
+      "name": "Camera Transition Vertical 11",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_11.mogrt",
+      "thumb": "thumbs/cam-vertical-11.png"
+    },
+    {
+      "id": "cam-vertical-12",
+      "name": "Camera Transition Vertical 12",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_12.mogrt",
+      "thumb": "thumbs/cam-vertical-12.png"
+    },
+    {
+      "id": "cam-vertical-13",
+      "name": "Camera Transition Vertical 13",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_13.mogrt",
+      "thumb": "thumbs/cam-vertical-13.png"
+    },
+    {
+      "id": "cam-vertical-14",
+      "name": "Camera Transition Vertical 14",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_14.mogrt",
+      "thumb": "thumbs/cam-vertical-14.png"
+    },
+    {
+      "id": "cam-vertical-15",
+      "name": "Camera Transition Vertical 15",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_15.mogrt",
+      "thumb": "thumbs/cam-vertical-15.png"
+    },
+    {
+      "id": "cam-vertical-16",
+      "name": "Camera Transition Vertical 16",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_16.mogrt",
+      "thumb": "thumbs/cam-vertical-16.png"
+    },
+    {
+      "id": "cam-vertical-17",
+      "name": "Camera Transition Vertical 17",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_17.mogrt",
+      "thumb": "thumbs/cam-vertical-17.png"
+    },
+    {
+      "id": "cam-vertical-18",
+      "name": "Camera Transition Vertical 18",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_18.mogrt",
+      "thumb": "thumbs/cam-vertical-18.png"
+    },
+    {
+      "id": "cam-vertical-19",
+      "name": "Camera Transition Vertical 19",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_19.mogrt",
+      "thumb": "thumbs/cam-vertical-19.png"
+    },
+    {
+      "id": "cam-vertical-20",
+      "name": "Camera Transition Vertical 20",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_20.mogrt",
+      "thumb": "thumbs/cam-vertical-20.png"
+    },
+    {
+      "id": "cam-vertical-21",
+      "name": "Camera Transition Vertical 21",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_21.mogrt",
+      "thumb": "thumbs/cam-vertical-21.png"
+    },
+    {
+      "id": "cam-vertical-22",
+      "name": "Camera Transition Vertical 22",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_22.mogrt",
+      "thumb": "thumbs/cam-vertical-22.png"
+    },
+    {
+      "id": "cam-vertical-23",
+      "name": "Camera Transition Vertical 23",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_23.mogrt",
+      "thumb": "thumbs/cam-vertical-23.png"
+    },
+    {
+      "id": "cam-vertical-24",
+      "name": "Camera Transition Vertical 24",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_24.mogrt",
+      "thumb": "thumbs/cam-vertical-24.png"
+    },
+    {
+      "id": "cam-vertical-25",
+      "name": "Camera Transition Vertical 25",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_25.mogrt",
+      "thumb": "thumbs/cam-vertical-25.png"
+    },
+    {
+      "id": "cam-vertical-26",
+      "name": "Camera Transition Vertical 26",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_26.mogrt",
+      "thumb": "thumbs/cam-vertical-26.png"
+    },
+    {
+      "id": "cam-vertical-27",
+      "name": "Camera Transition Vertical 27",
+      "group": "Vertical",
+      "media": "Vertical/Camera Transition_Vertical_27.mogrt",
+      "thumb": "thumbs/cam-vertical-27.png"
+    }
+  ]
+}

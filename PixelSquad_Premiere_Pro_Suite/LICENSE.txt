@@ -1,0 +1,29 @@
+======================================================================
+PIXELSQUAD COMMERCIAL SOFTWARE LICENSE AGREEMENT
+======================================================================
+
+Product: PixelSquad Creative Master Suite (Premiere Pro & After Effects)
+Copyright (C) 2026 PixelSquad. All Rights Reserved.
+Author: Mohammed Shahid (M O H A M M E D   S H A H I D)
+Contact Email: hello@pixelsquad.in
+
+TERMS OF USE:
+1. PROPRIETARY RIGHTS:
+   This software, its source code, user interface, presets, scripts,
+   and associated materials are the exclusive proprietary property of
+   PixelSquad and Mohammed Shahid.
+
+2. RESTRICTION ON COPYING & REDISTRIBUTION:
+   Unauthorized reproduction, copying, decompilation, redistribution,
+   sublicensing, or reverse engineering of any portion of this suite
+   without express written permission from Mohammed Shahid / PixelSquad is
+   strictly prohibited and subject to legal prosecution under international
+   copyright laws.
+
+3. LICENSE GRANT:
+   Each legitimate licensee is granted a non-exclusive, non-transferable
+   right to use this software on authorized personal workstations for
+   creative production.
+
+Support & Inquiries: hello@pixelsquad.in
+======================================================================

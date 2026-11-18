@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 288px; padding: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #101116; color: #e6e6ec; -webkit-font-smoothing: antialiased;
+  }
+  header { display: flex; align-items: center; gap: 9px; margin-bottom: 12px; }
+  .mark { width: 24px; height: 24px; border-radius: 7px; display: flex; align-items: center; justify-content: center;
+          background: linear-gradient(135deg, #00ff55, #00b33c); flex: 0 0 24px; }
+  .mark svg { width: 14px; height: 14px; fill: #0b1200; display: block; }
+  h1 { font-size: 13px; font-weight: 700; letter-spacing: -.1px; }
+  .ver { font-size: 9px; color: #6b6b78; margin-left: auto; }
+
+  .status { display: flex; align-items: center; gap: 8px; padding: 9px 11px; border-radius: 11px;
+            background: rgba(255,255,255,.045); border: 1px solid rgba(255,255,255,.08); margin-bottom: 10px; }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: #5a5a64; flex: 0 0 7px; }
+  .dot.on { background: #00ff55; box-shadow: 0 0 8px rgba(0,255,85,.75); }
+  .dot.off { background: #ff5b5b; }
+  .status .txt { font-size: 11px; color: #b6b6c2; line-height: 1.35; }
+  .status .txt b { color: #e6e6ec; font-weight: 650; }
+
+  button.send { width: 100%; padding: 12px; border-radius: 12px; border: 0; cursor: pointer;
+                background: linear-gradient(135deg, #00ff55, #00b33c); color: #0b1200;
+                font-size: 12.5px; font-weight: 750; letter-spacing: .3px; transition: filter .15s; }
+  button.send:hover { filter: brightness(1.08); }
+  button.send:disabled { opacity: .45; cursor: default; filter: none; }
+
+  h4 { margin: 14px 2px 7px; font-size: 9px; font-weight: 700; letter-spacing: .9px;
+       text-transform: uppercase; color: #74748a; }
+  .opt { display: flex; align-items: center; gap: 9px; padding: 7px 9px; border-radius: 9px;
+         cursor: pointer; font-size: 11.5px; color: #cfcfd8; }
+  .opt:hover { background: rgba(255,255,255,.05); }
+  .opt input { accent-color: #00ff55; width: 13px; height: 13px; margin: 0; }
+  .opt small { display: block; font-size: 9.5px; color: #6b6b78; margin-top: 1px; }
+  .opt span { flex: 1; }
+
+  .row { display: flex; align-items: center; gap: 8px; padding: 4px 9px; }
+  .row label { font-size: 11px; color: #9a9aa8; flex: 1; }
+  .row input[type=number] { width: 78px; background: rgba(255,255,255,.06); color: #e6e6ec;
+       border: 1px solid rgba(255,255,255,.1); border-radius: 8px; padding: 6px 8px; font-size: 11px;
+       font-family: inherit; text-align: center; }
+  .row input:focus { outline: none; border-color: #00ff55; }
+
+  footer { margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,.07);
+           font-size: 9.5px; color: #6b6b78; line-height: 1.5; }
+  kbd { background: rgba(255,255,255,.09); border-radius: 4px; padding: 1px 4px; font-size: 9px;
+        font-family: inherit; color: #b6b6c2; }
+</style>
+</head>
+<body>
+  <header>
+    <span class="mark"><svg viewBox="0 0 24 24"><path d="M4 3h16v3.2H8.6v4.1H19v3.2H8.6V21H4z"/></svg></span>
+    <h1>Web To AE</h1>
+    <span class="ver" id="ver">1.0.0</span>
+  </header>
+
+  <div class="status">
+    <span class="dot" id="dot"></span>
+    <span class="txt" id="status">Checking for After Effects…</span>
+  </div>
+
+  <button class="send" id="send">Send this page to After Effects</button>
+
+  <h4>Capture</h4>
+  <label class="opt"><input type="checkbox" data-k="fullPage">
+    <span>Full page<small>Scrolls first so lazy sections load</small></span></label>
+  <label class="opt"><input type="checkbox" data-k="images">
+    <span>Images &amp; icons<small>Fetches artwork and inline SVG</small></span></label>
+  <label class="opt"><input type="checkbox" data-k="splitLines">
+    <span>One layer per text line<small>Exact layout, less editable copy</small></span></label>
+  <label class="opt"><input type="checkbox" data-k="showButton">
+    <span>On-page button<small>The floating Send to AE pill</small></span></label>
+
+  <h4>Connection</h4>
+  <div class="row">
+    <label for="port">Panel port</label>
+    <input type="number" id="port" min="1024" max="65535" step="1">
+  </div>
+
+  <footer id="foot">
+    <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>A</kbd> sends the page ·
+    <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> hides the button
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+  PixelSquad Creative Suite
+  Copyright (C) 2026 PixelSquad. All Rights Reserved.
+  Author: Mohammed Shahid <hello@pixelsquad.in>
+  Proprietary & Confidential.
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PixelSquad Studio</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="brand">⚡ PIXELSQUAD STUDIO</div>
+        <div class="version">v1.0 Clean</div>
+    </div>
+
+    <!-- 1-Click Adjustment Layers -->
+    <div class="section">
+        <div class="section-title">📐 Smart Adjustment Layer</div>
+        <div class="grid-2">
+            <button onclick="createAdj('9x16')">📱 9:16 (Reels/Shorts)</button>
+            <button onclick="createAdj('16x9')">🖥️ 16:9 (YouTube)</button>
+            <button onclick="createAdj('1x1')">🔳 1:1 (Square)</button>
+            <button onclick="createAdj('4K')">💎 4K UHD</button>
+        </div>
+    </div>
+
+    <!-- Camera Moves & Shakes -->
+    <div class="section">
+        <div class="section-title">🎥 Camera Moves & Shakes</div>
+        <div class="grid-2">
+            <button onclick="applyMotion('PunchZoom')">⚡ Punch Zoom</button>
+            <button onclick="applyMotion('SmoothSlowPush')">🎬 Slow Push</button>
+            <button onclick="applyMotion('LensShake')">📳 Lens Shake</button>
+            <button onclick="applyMotion('BounceShake')">🏀 Bounce Shake</button>
+            <button onclick="applyMotion('WhipPan')">💨 Whip Pan</button>
+            <button onclick="applyMotion('DynamicTilt')">📐 Dynamic Tilt</button>
+        </div>
+    </div>
+
+    <!-- Native GPU FX (Replacing .aex) -->
+    <div class="section">
+        <div class="section-title">✨ Native GPU Effects (Safe & Clean)</div>
+        <div class="grid-2">
+            <button onclick="applyFX('GridOverlay')">▦ Grid Overlay</button>
+            <button onclick="applyFX('LiquidGlass')">💧 Liquid Glass</button>
+            <button onclick="applyFX('CinematicMask')">🎞️ Cinema Mask</button>
+            <button onclick="applyFX('MosaicCensor')">🧩 Mosaic Censor</button>
+        </div>
+    </div>
+
+    <!-- Silence Remover / Auto-Cut -->
+    <div class="section">
+        <div class="section-title">✂️ Fast Cut Automation</div>
+        <button class="primary" style="width: 100%; margin-bottom: 6px;" onclick="splitSilence()">
+            ⚡ Split & Ripple Silence At Playhead
+        </button>
+    </div>
+
+    <div class="status-bar" id="status">PixelSquad Studio Ready.</div>
+
+    <script src="../js/CSInterface.js"></script>
+    <script src="../js/app.js"></script>
+<div style="text-align:center;font-size:9.5px;color:#64748b;margin-top:12px;padding:4px;border-top:1px solid #1e293b;">PixelSquad © 2026 Mohammed Shahid • hello@pixelsquad.in</div>
+
+    <div style="margin-top:14px; text-align:center;">
+        <a href="privacy_policy.html" target="_blank" style="color:#f87171; font-size:10px; text-decoration:none; font-weight:700; border:1px solid #ef4444; padding:3px 8px; border-radius:4px; display:inline-block;">
+            🛡️ Strict Legal Warning & Privacy Policy
+        </a>
+    </div>
+
+
+    <script src="../js/license_config.js"></script>
+    <script src="../js/license_manager.js"></script>
+</body>
+</html>

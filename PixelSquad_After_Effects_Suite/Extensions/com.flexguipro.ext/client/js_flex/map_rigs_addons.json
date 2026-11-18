@@ -1,0 +1,116 @@
+[
+ {
+  "name": "autosync",
+  "file": "map_rigs_autosync.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 4
+ },
+ {
+  "name": "imagery",
+  "file": "map_rigs_imagery.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 10
+ },
+ {
+  "name": "styler",
+  "file": "map_rigs_styler.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 20
+ },
+ {
+  "name": "mapcomp",
+  "file": "map_rigs_mapcomp.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 30
+ },
+ {
+  "name": "geotools",
+  "file": "map_rigs_geotools.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 40
+ },
+ {
+  "name": "places",
+  "file": "map_rigs_places.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 45
+ },
+ {
+  "name": "features",
+  "file": "map_rigs_features.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 50
+ },
+ {
+  "name": "labels",
+  "file": "map_rigs_labels.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 60
+ },
+ {
+  "name": "shapes",
+  "file": "map_rigs_shapes.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 70
+ },
+ {
+  "name": "dataviz",
+  "file": "map_rigs_dataviz.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 80
+ },
+ {
+  "name": "3d",
+  "file": "map_rigs_3d.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 90
+ },
+ {
+  "name": "finalize",
+  "file": "map_rigs_finalize.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 100
+ },
+ {
+  "name": "render",
+  "file": "map_rigs_render.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 105
+ },
+ {
+  "name": "scripting",
+  "file": "map_rigs_scripting.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 110
+ },
+ {
+  "name": "shell",
+  "file": "map_rigs_shell.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 120
+ },
+ {
+  "name": "pages",
+  "file": "map_rigs_pages.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 123
+ },
+ {
+  "name": "desk",
+  "file": "map_rigs_desk.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 125
+ },
+ {
+  "name": "looks",
+  "file": "map_rigs_looks.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 130
+ },
+ {
+  "name": "link",
+  "file": "map_rigs_link.js",
+  "v": "9.0.0-mr2.0809",
+  "order": 140
+ }
+]

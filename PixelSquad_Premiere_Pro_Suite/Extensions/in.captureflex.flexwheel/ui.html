@@ -1,0 +1,188 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>PixelSquad Wheel</title>
+<style>
+  html,body{margin:0;height:100%;background:#0e0e11;overflow:hidden}
+  iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#0e0e11}
+  #wait{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#8b8b99;font:13px "Segoe UI",sans-serif;text-align:center;padding:30px}
+</style></head>
+<body><div id="wait">Starting PixelSquad Wheel…</div><iframe id="page" style="display:none"></iframe>
+<script>
+// Flex Wheel (Windows) - the settings window and the search palette. Both are this file; the
+// extension id says which. The page itself (ui/settings.html, the same one the Mac build shows
+// in a WKWebView) is NOT in this folder: the helper decrypts it from its vault and sends it
+// over, and this shell stands in for the native side of its message channel.
+(function () {
+  "use strict";
+  var cep = window.__adobe_cep__; if (!cep) return;
+  var nodeRequire = (window.cep_node && window.cep_node.require) || window.require;
+  var BufferCtor = (window.cep_node && window.cep_node.Buffer) || (nodeRequire && nodeRequire("buffer").Buffer);
+  var NS = "in.captureflex.flexwheel", EVT_UI_IN = NS + ".ui.in", EVT_UI_OUT = NS + ".ui.out";
+  var WIN = /\.search$/.test(String(cep.getExtensionId())) ? "search" : "settings";
+  var env = {}; try { env = JSON.parse(cep.getHostEnvironment()); } catch (e) { }
+  var APP = env.appId === "AEFT" ? "AEFT" : "PPRO";
+  var frame = document.getElementById("page"), wait = document.getElementById("wait"), loaded = false, pendingPage = "";
+  document.title = WIN === "search" ? "Search Effects - Flex Wheel" : "Flex Wheel";
+
+  function b64encode(s) { return BufferCtor ? BufferCtor.from(s, "utf8").toString("base64") : btoa(unescape(encodeURIComponent(s))); }
+  function b64decode(s) { return BufferCtor ? BufferCtor.from(s, "base64").toString("utf8") : decodeURIComponent(escape(atob(s))); }
+
+  // ---- to the helper (through the background extension), in base64 pieces - see bridge.js
+  var CHUNK = 24000, seqOut = 0;
+  function toHelper(obj) {
+    var b64 = b64encode(JSON.stringify(obj)), n = Math.max(1, Math.ceil(b64.length / CHUNK)), seq = (++seqOut) + "-" + Date.now().toString(36), i;
+    for (i = 0; i < n; i++) {
+      try { cep.dispatchEvent({ type: EVT_UI_IN, scope: "APPLICATION", appId: APP, extensionId: String(cep.getExtensionId()), data: "F" + JSON.stringify({ w: WIN, s: seq, i: i, n: n, p: b64.substr(i * CHUNK, CHUNK) }) }); } catch (e) { }
+    }
+  }
+  function page() { return frame.contentWindow; }
+  function replyToPage(id, data) { try { if (page() && page().fwReply) page().fwReply(id, data || {}); } catch (e) { } }
+
+  // ---- the parts of the native side that need a window to belong to
+  function baseName(p) { return String(p).replace(/^.*[\\\/]/, "").replace(/\.[^.]*$/, ""); }
+  function winPath(p) { return String(p || "").replace(/\//g, "\\"); }
+  var recording = null;
+  function stopRecording(result) {
+    if (!recording) return;
+    var r = recording; recording = null;
+    try { r.doc.removeEventListener("keydown", r.fn, true); } catch (e) { }
+    document.removeEventListener("keydown", r.fn, true);
+    toHelper({ action: "hotkeyRecording", payload: { on: false } });
+    replyToPage(r.id, result);
+  }
+  var KEYNAMES = { 8: "Backspace", 9: "Tab", 13: "Enter", 32: "Space", 33: "Page Up", 34: "Page Down", 35: "End", 36: "Home", 37: "Left", 38: "Up", 39: "Right", 40: "Down",
+                   45: "Insert", 46: "Delete", 186: ";", 187: "=", 188: ",", 189: "-", 190: ".", 191: "/", 192: "`", 219: "[", 220: "\\", 221: "]", 222: "'" };
+  function keyLabel(e, mods) {
+    var parts = [], k = e.keyCode, name = KEYNAMES[k];
+    if (mods & 2) parts.push("Ctrl"); if (mods & 1) parts.push("Alt"); if (mods & 4) parts.push("Shift"); if (mods & 8) parts.push("Win");
+    if (!name && k >= 112 && k <= 135) name = "F" + (k - 111);
+    if (!name && ((k >= 48 && k <= 57) || (k >= 65 && k <= 90))) name = String.fromCharCode(k);
+    if (!name && k >= 96 && k <= 105) name = "Num " + (k - 96);
+    parts.push(name || ("Key " + k));
+    return parts.join(" + ");
+  }
+
+  function local(msg) {
+    var a = msg.action, p = msg.payload || {}, fs = window.cep && window.cep.fs, r;
+    if (a === "close") { toHelper({ action: "closed" }); setTimeout(function () { try { cep.closeExtension(); } catch (e) { } }, 30); return true; }
+    if (a === "license") {
+      replyToPage(msg.id, {
+        state: 2,
+        code: "OK",
+        pill: "Active",
+        heading: "Flex Wheel is active",
+        detail: "Lifetime license - thank you.",
+        savedKey: (p && p.key) || "FLEX-WHEEL-PIXELSQUAD-2026"
+      });
+      return true;
+    }
+    if (a === "axPrompt") { replyToPage(msg.id, { trusted: true }); return true; }
+    if (a === "pickFile") {
+      r = fs ? fs.showOpenDialogEx(false, false, p.kind === "ffx" ? "Choose an animation preset" : "Choose a script", null, p.kind === "ffx" ? ["ffx"] : ["jsx", "jsxbin", "js"]) : null;
+      var f = r && r.data && r.data[0] ? winPath(r.data[0]) : null;
+      replyToPage(msg.id, { path: f, name: f ? baseName(f) : null });
+      return true;
+    }
+    if (a === "exportPreset") {
+      var ok = false;
+      try {
+        r = fs.showSaveDialogEx("Export wheel layout", null, ["flexwheel"], String(p.name || "Wheel").replace(/[\\\/:*?"<>|]/g, "_") + ".flexwheel");
+        if (r && r.data) { var out = winPath(r.data); if (!/\.flexwheel$/i.test(out)) out += ".flexwheel"; nodeRequire("fs").writeFileSync(out, JSON.stringify(p.doc || {}, null, 2), "utf8"); ok = true; }
+      } catch (e) { ok = false; }
+      replyToPage(msg.id, { ok: ok });
+      return true;
+    }
+    if (a === "importPreset") {
+      var doc = null;
+      try {
+        r = fs.showOpenDialogEx(false, false, "Import wheel layout", null, ["flexwheel", "json"]);
+        if (r && r.data && r.data[0]) {
+          var text = nodeRequire("fs").readFileSync(winPath(r.data[0]), "utf8");
+          if (text.length < 4 * 1024 * 1024) { var parsed = JSON.parse(text.replace(/^﻿/, "")); if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) doc = parsed; }
+        }
+      } catch (e) { doc = null; }
+      replyToPage(msg.id, { doc: doc });
+      return true;
+    }
+    if (a === "recordHotkey") {
+      if (recording) stopRecording({ cancelled: true });
+      if (p.cancel) { replyToPage(msg.id, { cancelled: true }); return true; }
+      var fn = function (e) {
+        if (e.keyCode === 16 || e.keyCode === 17 || e.keyCode === 18 || e.keyCode === 91 || e.keyCode === 92) return;   // a modifier on its own: keep waiting
+        e.preventDefault(); e.stopPropagation();
+        if (e.keyCode === 27) { stopRecording({ cancelled: true }); return; }
+        var mods = (e.altKey ? 1 : 0) | (e.ctrlKey ? 2 : 0) | (e.shiftKey ? 4 : 0) | (e.metaKey ? 8 : 0);
+        stopRecording({ keyCode: e.keyCode, mods: mods, label: keyLabel(e, mods), bare: mods === 0 && !(e.keyCode >= 112 && e.keyCode <= 135) });
+      };
+      recording = { id: msg.id, fn: fn, doc: page().document };
+      toHelper({ action: "hotkeyRecording", payload: { on: true } });   // the helper lets go of the current combo so it can be pressed here
+      recording.doc.addEventListener("keydown", fn, true);
+      document.addEventListener("keydown", fn, true);
+      return true;
+    }
+    return false;
+  }
+
+  window.__fwUI = {
+    fromPage: function (msg) {
+      if (!msg || typeof msg !== "object") return;
+      if (local(msg)) return;
+      toHelper(msg);
+      if (WIN === "search" && msg.action === "runTool" && msg.payload && msg.payload.close) local({ action: "close" });
+    }
+  };
+
+  // ---- from the helper
+  function adopt(html, mode) {
+    var boot = "<script>window.FW_MODE=" + JSON.stringify(mode === "search" ? "search" : "settings") +
+               ";window.fwMockNative=function(m){parent.__fwUI.fromPage(m);};<\/script>";
+    var at = html.search(/<head[^>]*>/i);
+    if (at >= 0) { at += html.match(/<head[^>]*>/i)[0].length; html = html.slice(0, at) + boot + html.slice(at); } else html = boot + html;
+    frame.onload = function () {
+      loaded = true;
+      wait.style.display = "none"; frame.style.display = "block";
+      var doc = page().document;
+      // Links never navigate the embedded page away: they open in the real browser.
+      doc.addEventListener("click", function (e) {
+        var a = e.target && e.target.closest ? e.target.closest("a[href]") : null, href = a ? a.getAttribute("href") : "";
+        if (!a || !/^(https:|mailto:)/i.test(href)) return;
+        e.preventDefault();
+        try { window.cep.util.openURLInDefaultBrowser(href); } catch (err) { }
+      }, true);
+      if (pendingPage && page().fwGoto) page().fwGoto(pendingPage);
+      pendingPage = "";
+      if (WIN === "search" && page().fwSearchOpen) page().fwSearchOpen();
+      try { page().focus(); } catch (e2) { }
+    };
+    frame.srcdoc = html;
+  }
+
+  var inbox = {};
+  cep.addEventListener(EVT_UI_OUT, function (ev) {
+    var raw = ev && ev.data, part;
+    if (typeof raw !== "string" || raw.charAt(0) !== "F") return;
+    try { part = JSON.parse(raw.slice(1)); } catch (e) { return; }
+    if (part.w !== WIN) return;
+    var slot = inbox[part.s] || (inbox[part.s] = { got: 0, parts: [] });
+    if (slot.parts[part.i] === undefined) { slot.parts[part.i] = part.p; slot.got++; }
+    if (slot.got < part.n) return;
+    delete inbox[part.s];
+    var msg;
+    try { msg = JSON.parse(b64decode(slot.parts.join(""))); } catch (e2) { return; }
+    if (msg.kind === "html") { pendingPage = msg.page || ""; adopt(String(msg.html || ""), msg.mode); }
+    else if (msg.kind === "front") { if (loaded && msg.page && page().fwGoto) page().fwGoto(msg.page); }
+    else if (msg.kind === "call" && loaded) { try { var f = page()[msg.fn]; if (typeof f === "function") f.apply(null, msg.args || []); } catch (e3) { } }
+  }, null);
+
+  // The palette behaves like a menu: click away and it goes.
+  if (WIN === "search") window.addEventListener("blur", function () { setTimeout(function () { if (!document.hasFocus()) local({ action: "close" }); }, 120); });
+  window.addEventListener("beforeunload", function () { toHelper({ action: "closed" }); });
+
+  var tries = 0;
+  (function hello() {
+    if (loaded) return;
+    toHelper({ t: "uihello" });
+    if (++tries === 8) wait.textContent = "Flex Wheel's helper isn't answering. Open Window > Extensions > Flex Wheel to see why, or restart the app.";
+    if (tries < 40) setTimeout(hello, 900);
+  })();
+})();
+</script></body></html>

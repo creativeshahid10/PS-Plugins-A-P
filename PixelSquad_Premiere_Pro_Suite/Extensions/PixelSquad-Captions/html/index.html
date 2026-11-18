@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+  PixelSquad Creative Suite
+  Copyright (C) 2026 PixelSquad. All Rights Reserved.
+  Author: Mohammed Shahid <hello@pixelsquad.in>
+  Proprietary & Confidential.
+-->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PSCaptions</title>
+  <script src="CSInterface.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Montserrat:wght@800;900&family=Anton&display=swap" rel="stylesheet">
+</head>
+<body class="ps-app">
+  <div id="appContainer">
+
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="header-brand">
+        <img src="../assets/pixel_squad_logo.svg" class="header-logo" alt="Pixel Squad" onerror="this.src='../assets/pixel_squad_logo.png'">
+        <div class="brand-text">
+          <div class="brand-title">PSCaptions <span class="version-badge">v1.0</span></div>
+          <div class="brand-subtitle">PREMIERE PRO VIRAL CAPTIONS SUITE</div>
+        </div>
+      </div>
+      <div class="header-status" id="headerStatus">
+        <span class="status-dot disconnected" id="statusDot"></span>
+        <span class="status-label" id="statusLabel">Checking PPro...</span>
+        <button class="btn-icon" id="btnRefreshSeq" title="Refresh Sequence Status">&#x21bb;</button>
+      </div>
+    </header>
+
+    <!-- FORMAT & TRACK TOOLBAR -->
+    <section class="toolbar-controls">
+      <div class="control-group">
+        <label class="control-label">ASPECT RATIO</label>
+        <div class="toggle-group" id="aspectToggle">
+          <button class="toggle-btn active" data-aspect="9x16_Reels">9:16 Reels</button>
+          <button class="toggle-btn" data-aspect="16x9_Horizontal">16:9 YouTube</button>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">TARGET TRACK</label>
+        <select class="control-select" id="selectTrack">
+          <option value="0">V1 (Base)</option>
+          <option value="1" selected>V2 (Captions)</option>
+          <option value="2">V3 (Overlay)</option>
+          <option value="3">V4 (Top)</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- CATEGORY FILTER PILLS -->
+    <nav class="category-nav" id="categoryNav">
+      <button class="category-pill active" data-category="all">All (12)</button>
+      <button class="category-pill" data-category="Word-by-Word">Word-by-Word</button>
+      <button class="category-pill" data-category="Hormozi Bounce">Hormozi</button>
+      <button class="category-pill" data-category="Neon Glow">Neon Glow</button>
+      <button class="category-pill" data-category="Minimal Clean">Minimal</button>
+      <button class="category-pill" data-category="Box Highlight">Box Pill</button>
+      <button class="category-pill" data-category="Kinetic Pop">Kinetic</button>
+    </nav>
+
+    <!-- PRESETS GRID VIEW -->
+    <main class="presets-scroll-area" id="presetsGrid">
+      <!-- 12 Preset Cards populated dynamically by app.js -->
+    </main>
+
+    <!-- FLOATING BOTTOM DOCK / CONTROLS -->
+    <footer class="bottom-dock">
+      <!-- DUAL MODE SWITCHER -->
+      <div class="dock-mode-tabs">
+        <button class="mode-tab active" id="tabPunchline">⚡ Punchline Mode</button>
+        <button class="mode-tab" id="tabBulkSRT">📜 Bulk SRT / Transcript</button>
+      </div>
+
+      <!-- MODE A: SINGLE PUNCHLINE CONTROLS -->
+      <div class="mode-panel active" id="panelPunchline">
+        <div class="input-row">
+          <input type="text" class="text-input" id="captionTextInput" placeholder="Enter punchline / caption..." value="VIRAL REELS" spellcheck="false" />
+          <button class="btn-clear" id="btnClearText" title="Clear Text">&times;</button>
+        </div>
+
+        <div class="styling-row">
+          <!-- QUICK COLOR SWATCHES -->
+          <div class="color-swatches">
+            <span class="color-swatch active" style="background:#FFE600" data-color="#FFE600" title="Hormozi Yellow"></span>
+            <span class="color-swatch" style="background:#22C55E" data-color="#22C55E" title="Neon Lime"></span>
+            <span class="color-swatch" style="background:#00F0FF" data-color="#00F0FF" title="Cyber Cyan"></span>
+            <span class="color-swatch" style="background:#FF007F" data-color="#FF007F" title="Vapor Magenta"></span>
+            <span class="color-swatch" style="background:#EF4444" data-color="#EF4444" title="Fire Red"></span>
+            <span class="color-swatch" style="background:#FFFFFF" data-color="#FFFFFF" title="Crisp White"></span>
+            <input type="color" id="customColorPicker" value="#FFE600" class="custom-color-input" title="Custom Color" />
+          </div>
+
+          <!-- DURATION PRESETS -->
+          <div class="duration-group">
+            <button class="btn-chip" data-duration="1.0">1.0s</button>
+            <button class="btn-chip active" data-duration="1.5">1.5s</button>
+            <button class="btn-chip" data-duration="2.0">2.0s</button>
+            <button class="btn-chip" data-duration="3.0">3.0s</button>
+          </div>
+        </div>
+
+        <button class="btn-primary" id="btnApplySingle">
+          <span class="btn-icon-flash">&#9889;</span> APPLY TO PLAYHEAD
+        </button>
+      </div>
+
+      <!-- MODE B: BULK SRT / TRANSCRIPT CONTROLS -->
+      <div class="mode-panel" id="panelBulkSRT">
+        <textarea class="srt-textarea" id="srtInput" placeholder="Paste .SRT subtitles or script lines here...&#10;&#10;1&#10;00:00:01,000 --> 00:00:02,500&#10;Stop scrolling right now!&#10;&#10;2&#10;00:00:02,600 --> 00:00:04,200&#10;This secret changes everything."></textarea>
+        
+        <div class="srt-info-row">
+          <span class="srt-count-badge" id="srtCountBadge">0 cues detected</span>
+          <button class="btn-secondary-sm" id="btnLoadSampleSRT">Load Sample SRT</button>
+          <button class="btn-secondary-sm" id="btnClearSRT">Clear</button>
+        </div>
+
+        <button class="btn-primary" id="btnApplyBulk">
+          <span class="btn-icon-flash">&#128640;</span> BULK GENERATE ALL CAPTIONS
+        </button>
+      </div>
+    </footer>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="ps-toast" id="psToast"></div>
+
+  </div>
+
+  <script src="../js/app.js"></script>
+<div style="text-align:center;font-size:9.5px;color:#64748b;margin-top:12px;padding:4px;border-top:1px solid #1e293b;">PixelSquad © 2026 Mohammed Shahid • hello@pixelsquad.in</div>
+</body>
+</html>

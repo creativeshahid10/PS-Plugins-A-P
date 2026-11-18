@@ -1,0 +1,21 @@
+Copyright (C) 2026 PixelSquad. All Rights Reserved.
+Author: Mohammed Shahid <hello@pixelsquad.in>
+----------------------------------------------------------------------
+
+PS Tools - Installation Guide
+=============================================
+
+1. Copy the extension folder into your Adobe CEP extensions directory:
+
+   For Windows:
+   C:\Program Files (x86)\Common Files\Adobe\CEP\extensions\
+   (OR: C:\Users\<UserName>\AppData\Roaming\Adobe\CEP\extensions\)
+
+   For macOS:
+   /Library/Application Support/Adobe/CEP/extensions/
+   (OR: ~/Library/Application Support/Adobe/CEP/extensions/)
+
+2. Restart After Effects.
+3. Open from menu: Window > Extensions > PS Tools
+
+Website: https://pixelsquad.in

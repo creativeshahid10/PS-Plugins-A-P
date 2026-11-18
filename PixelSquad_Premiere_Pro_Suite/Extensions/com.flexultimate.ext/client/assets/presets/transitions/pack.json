@@ -1,0 +1,412 @@
+{
+  "id": "transitions",
+  "label": "Transitions",
+  "kind": "mogrt",
+  "frame": "wide",
+  "canvas": "#202120",
+  "library": "transitions",
+  "items": [
+    {
+      "id": "tr-01",
+      "name": "Transition 01",
+      "media": "Transition_01.mogrt",
+      "thumb": "thumbs/tr-01.png"
+    },
+    {
+      "id": "tr-02",
+      "name": "Transition 02",
+      "media": "Transition_02.mogrt",
+      "thumb": "thumbs/tr-02.png"
+    },
+    {
+      "id": "tr-03",
+      "name": "Transition 03",
+      "media": "Transition_03.mogrt",
+      "thumb": "thumbs/tr-03.png"
+    },
+    {
+      "id": "tr-04",
+      "name": "Transition 04",
+      "media": "Transition_04.mogrt",
+      "thumb": "thumbs/tr-04.png"
+    },
+    {
+      "id": "tr-05",
+      "name": "Transition 05",
+      "media": "Transition_05.mogrt",
+      "thumb": "thumbs/tr-05.png"
+    },
+    {
+      "id": "tr-06",
+      "name": "Transition 06",
+      "media": "Transition_06.mogrt",
+      "thumb": "thumbs/tr-06.png"
+    },
+    {
+      "id": "tr-07",
+      "name": "Transition 07",
+      "media": "Transition_07.mogrt",
+      "thumb": "thumbs/tr-07.png"
+    },
+    {
+      "id": "tr-08",
+      "name": "Transition 08",
+      "media": "Transition_08.mogrt",
+      "thumb": "thumbs/tr-08.png"
+    },
+    {
+      "id": "tr-09",
+      "name": "Transition 09",
+      "media": "Transition_09.mogrt",
+      "thumb": "thumbs/tr-09.png"
+    },
+    {
+      "id": "tr-10",
+      "name": "Transition 10",
+      "media": "Transition_10.mogrt",
+      "thumb": "thumbs/tr-10.png"
+    },
+    {
+      "id": "tr-11",
+      "name": "Transition 11",
+      "media": "Transition_11.mogrt",
+      "thumb": "thumbs/tr-11.png"
+    },
+    {
+      "id": "tr-12",
+      "name": "Transition 12",
+      "media": "Transition_12.mogrt",
+      "thumb": "thumbs/tr-12.png"
+    },
+    {
+      "id": "tr-13",
+      "name": "Transition 13",
+      "media": "Transition_13.mogrt",
+      "thumb": "thumbs/tr-13.png"
+    },
+    {
+      "id": "tr-14",
+      "name": "Transition 14",
+      "media": "Transition_14.mogrt",
+      "thumb": "thumbs/tr-14.png"
+    },
+    {
+      "id": "tr-15",
+      "name": "Transition 15",
+      "media": "Transition_15.mogrt",
+      "thumb": "thumbs/tr-15.png"
+    },
+    {
+      "id": "tr-16",
+      "name": "Transition 16",
+      "media": "Transition_16.mogrt",
+      "thumb": "thumbs/tr-16.png"
+    },
+    {
+      "id": "tr-17",
+      "name": "Transition 17",
+      "media": "Transition_17.mogrt",
+      "thumb": "thumbs/tr-17.png"
+    },
+    {
+      "id": "tr-18",
+      "name": "Transition 18",
+      "media": "Transition_18.mogrt",
+      "thumb": "thumbs/tr-18.png"
+    },
+    {
+      "id": "tr-19",
+      "name": "Transition 19",
+      "media": "Transition_19.mogrt",
+      "thumb": "thumbs/tr-19.png"
+    },
+    {
+      "id": "tr-20",
+      "name": "Transition 20",
+      "media": "Transition_20.mogrt",
+      "thumb": "thumbs/tr-20.png"
+    },
+    {
+      "id": "tr-21",
+      "name": "Transition 21",
+      "media": "Transition_21.mogrt",
+      "thumb": "thumbs/tr-21.png"
+    },
+    {
+      "id": "tr-22",
+      "name": "Transition 22",
+      "media": "Transition_22.mogrt",
+      "thumb": "thumbs/tr-22.png"
+    },
+    {
+      "id": "tr-23",
+      "name": "Transition 23",
+      "media": "Transition_23.mogrt",
+      "thumb": "thumbs/tr-23.png"
+    },
+    {
+      "id": "tr-24",
+      "name": "Transition 24",
+      "media": "Transition_24.mogrt",
+      "thumb": "thumbs/tr-24.png"
+    },
+    {
+      "id": "tr-25",
+      "name": "Transition 25",
+      "media": "Transition_25.mogrt",
+      "thumb": "thumbs/tr-25.png"
+    },
+    {
+      "id": "tr-26",
+      "name": "Transition 26",
+      "media": "Transition_26.mogrt",
+      "thumb": "thumbs/tr-26.png"
+    },
+    {
+      "id": "tr-27",
+      "name": "Transition 27",
+      "media": "Transition_27.mogrt",
+      "thumb": "thumbs/tr-27.png"
+    },
+    {
+      "id": "tr-28",
+      "name": "Transition 28",
+      "media": "Transition_28.mogrt",
+      "thumb": "thumbs/tr-28.png"
+    },
+    {
+      "id": "tr-29",
+      "name": "Transition 29",
+      "media": "Transition_29.mogrt",
+      "thumb": "thumbs/tr-29.png"
+    },
+    {
+      "id": "tr-30",
+      "name": "Transition 30",
+      "media": "Transition_30.mogrt",
+      "thumb": "thumbs/tr-30.png"
+    },
+    {
+      "id": "tr-31",
+      "name": "Transition 31",
+      "media": "Transition_31.mogrt",
+      "thumb": "thumbs/tr-31.png"
+    },
+    {
+      "id": "tr-32",
+      "name": "Transition 32",
+      "media": "Transition_32.mogrt",
+      "thumb": "thumbs/tr-32.png"
+    },
+    {
+      "id": "tr-33",
+      "name": "Transition 33",
+      "media": "Transition_33.mogrt",
+      "thumb": "thumbs/tr-33.png"
+    },
+    {
+      "id": "tr-34",
+      "name": "Transition 34",
+      "media": "Transition_34.mogrt",
+      "thumb": "thumbs/tr-34.png"
+    },
+    {
+      "id": "tr-35",
+      "name": "Transition 35",
+      "media": "Transition_35.mogrt",
+      "thumb": "thumbs/tr-35.png"
+    },
+    {
+      "id": "tr-36",
+      "name": "Transition 36",
+      "media": "Transition_36.mogrt",
+      "thumb": "thumbs/tr-36.png"
+    },
+    {
+      "id": "tr-37",
+      "name": "Transition 37",
+      "media": "Transition_37.mogrt",
+      "thumb": "thumbs/tr-37.png"
+    },
+    {
+      "id": "tr-38",
+      "name": "Transition 38",
+      "media": "Transition_38.mogrt",
+      "thumb": "thumbs/tr-38.png"
+    },
+    {
+      "id": "tr-39",
+      "name": "Transition 39",
+      "media": "Transition_39.mogrt",
+      "thumb": "thumbs/tr-39.png"
+    },
+    {
+      "id": "tr-40",
+      "name": "Transition 40",
+      "media": "Transition_40.mogrt",
+      "thumb": "thumbs/tr-40.png"
+    },
+    {
+      "id": "tr-41",
+      "name": "Transition 41",
+      "media": "Transition_41.mogrt",
+      "thumb": "thumbs/tr-41.png"
+    },
+    {
+      "id": "tr-42",
+      "name": "Transition 42",
+      "media": "Transition_42.mogrt",
+      "thumb": "thumbs/tr-42.png"
+    },
+    {
+      "id": "tr-43",
+      "name": "Transition 43",
+      "media": "Transition_43.mogrt",
+      "thumb": "thumbs/tr-43.png"
+    },
+    {
+      "id": "tr-44",
+      "name": "Transition 44",
+      "media": "Transition_44.mogrt",
+      "thumb": "thumbs/tr-44.png"
+    },
+    {
+      "id": "tr-45",
+      "name": "Transition 45",
+      "media": "Transition_45.mogrt",
+      "thumb": "thumbs/tr-45.png"
+    },
+    {
+      "id": "tr-46",
+      "name": "Transition 46",
+      "media": "Transition_46.mogrt",
+      "thumb": "thumbs/tr-46.png"
+    },
+    {
+      "id": "tr-47",
+      "name": "Transition 47",
+      "media": "Transition_47.mogrt",
+      "thumb": "thumbs/tr-47.png"
+    },
+    {
+      "id": "tr-48",
+      "name": "Transition 48",
+      "media": "Transition_48.mogrt",
+      "thumb": "thumbs/tr-48.png"
+    },
+    {
+      "id": "tr-49",
+      "name": "Transition 49",
+      "media": "Transition_49.mogrt",
+      "thumb": "thumbs/tr-49.png"
+    },
+    {
+      "id": "tr-50",
+      "name": "Transition 50",
+      "media": "Transition_50.mogrt",
+      "thumb": "thumbs/tr-50.png"
+    },
+    {
+      "id": "tr-51",
+      "name": "Transition 51",
+      "media": "Transition_51.mogrt",
+      "thumb": "thumbs/tr-51.png"
+    },
+    {
+      "id": "tr-52",
+      "name": "Transition 52",
+      "media": "Transition_52.mogrt",
+      "thumb": "thumbs/tr-52.png"
+    },
+    {
+      "id": "tr-53",
+      "name": "Transition 53",
+      "media": "Transition_53.mogrt",
+      "thumb": "thumbs/tr-53.png"
+    },
+    {
+      "id": "tr-54",
+      "name": "Transition 54",
+      "media": "Transition_54.mogrt",
+      "thumb": "thumbs/tr-54.png"
+    },
+    {
+      "id": "tr-55",
+      "name": "Transition 55",
+      "media": "Transition_55.mogrt",
+      "thumb": "thumbs/tr-55.png"
+    },
+    {
+      "id": "tr-56",
+      "name": "Transition 56",
+      "media": "Transition_56.mogrt",
+      "thumb": "thumbs/tr-56.png"
+    },
+    {
+      "id": "tr-57",
+      "name": "Transition 57",
+      "media": "Transition_57.mogrt",
+      "thumb": "thumbs/tr-57.png"
+    },
+    {
+      "id": "tr-58",
+      "name": "Transition 58",
+      "media": "Transition_58.mogrt",
+      "thumb": "thumbs/tr-58.png"
+    },
+    {
+      "id": "tr-59",
+      "name": "Transition 59",
+      "media": "Transition_59.mogrt",
+      "thumb": "thumbs/tr-59.png"
+    },
+    {
+      "id": "tr-60",
+      "name": "Transition 60",
+      "media": "Transition_60.mogrt",
+      "thumb": "thumbs/tr-60.png"
+    },
+    {
+      "id": "tr-61",
+      "name": "Transition 61",
+      "media": "Transition_61.mogrt",
+      "thumb": "thumbs/tr-61.png"
+    },
+    {
+      "id": "tr-62",
+      "name": "Transition 62",
+      "media": "Transition_62.mogrt",
+      "thumb": "thumbs/tr-62.png"
+    },
+    {
+      "id": "tr-63",
+      "name": "Transition 63",
+      "media": "Transition_63.mogrt",
+      "thumb": "thumbs/tr-63.png"
+    },
+    {
+      "id": "tr-64",
+      "name": "Transition 64",
+      "media": "Transition_64.mogrt",
+      "thumb": "thumbs/tr-64.png"
+    },
+    {
+      "id": "tr-65",
+      "name": "Transition 65",
+      "media": "Transition_65.mogrt",
+      "thumb": "thumbs/tr-65.png"
+    },
+    {
+      "id": "tr-66",
+      "name": "Transition 66",
+      "media": "Transition_66.mogrt",
+      "thumb": "thumbs/tr-66.png"
+    },
+    {
+      "id": "tr-67",
+      "name": "Transition 67",
+      "media": "Transition_67.mogrt",
+      "thumb": "thumbs/tr-67.png"
+    }
+  ]
+}

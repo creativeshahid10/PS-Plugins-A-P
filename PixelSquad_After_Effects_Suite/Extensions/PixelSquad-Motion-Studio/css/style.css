@@ -1,0 +1,94 @@
+* { box-sizing: border-box; margin: 0; padding: 0; user-select: none; }
+body {
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 12px;
+    padding: 12px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #1e293b;
+    margin-bottom: 14px;
+}
+.brand {
+    font-size: 14.5px;
+    font-weight: 800;
+    color: #38bdf8;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.version {
+    font-size: 10px;
+    background: #1e293b;
+    color: #38bdf8;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+.section {
+    background: #131b2e;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+.section-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #94a3b8;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+button {
+    background: #1e293b;
+    color: #f1f5f9;
+    border: 1px solid #334155;
+    padding: 8px 6px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    text-align: center;
+}
+button:hover {
+    background: #0284c7;
+    border-color: #38bdf8;
+    color: #fff;
+}
+button.primary {
+    background: linear-gradient(135deg, #0284c7, #2563eb);
+    border: none;
+    color: #fff;
+}
+.anchor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    max-width: 180px;
+    margin: 0 auto;
+}
+.anchor-btn {
+    height: 32px;
+    padding: 0;
+    font-size: 12px;
+}
+.status-bar {
+    margin-top: 10px;
+    font-size: 10.5px;
+    color: #38bdf8;
+    background: #060911;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border-left: 3px solid #38bdf8;
+    min-height: 26px;
+    word-break: break-all;
+}

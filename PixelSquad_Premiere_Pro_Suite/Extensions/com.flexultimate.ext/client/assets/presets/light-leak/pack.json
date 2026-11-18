@@ -1,0 +1,103 @@
+{
+  "id": "light-leak",
+  "label": "Light Leak",
+  "kind": "transition",
+  "fps": 25,
+  "blendMode": "Screen",
+  "markerName": "Transition Point",
+  "items": [
+    {
+      "id": "1",
+      "name": "Light Leak 01",
+      "media": "media/1.mp4",
+      "preview": "preview/1.mp4",
+      "markerFrame": 12,
+      "markerSeconds": 0.48,
+      "durationSeconds": 1.0
+    },
+    {
+      "id": "2",
+      "name": "Light Leak 02",
+      "media": "media/2.mp4",
+      "preview": "preview/2.mp4",
+      "markerFrame": 8,
+      "markerSeconds": 0.32,
+      "durationSeconds": 0.88
+    },
+    {
+      "id": "3",
+      "name": "Light Leak 03",
+      "media": "media/3.mp4",
+      "preview": "preview/3.mp4",
+      "markerFrame": 17,
+      "markerSeconds": 0.68,
+      "durationSeconds": 1.4
+    },
+    {
+      "id": "4",
+      "name": "Light Leak 04",
+      "media": "media/4.mp4",
+      "preview": "preview/4.mp4",
+      "markerFrame": 16,
+      "markerSeconds": 0.64,
+      "durationSeconds": 1.24
+    },
+    {
+      "id": "5",
+      "name": "Light Leak 05",
+      "media": "media/5.mp4",
+      "preview": "preview/5.mp4",
+      "markerFrame": 9,
+      "markerSeconds": 0.36,
+      "durationSeconds": 0.92
+    },
+    {
+      "id": "6",
+      "name": "Light Leak 06",
+      "media": "media/6.mp4",
+      "preview": "preview/6.mp4",
+      "markerFrame": 13,
+      "markerSeconds": 0.52,
+      "durationSeconds": 0.84
+    },
+    {
+      "id": "7",
+      "name": "Light Leak 07",
+      "media": "media/7.mp4",
+      "preview": "preview/7.mp4",
+      "markerFrame": 15,
+      "markerSeconds": 0.6,
+      "durationSeconds": 1.28
+    },
+    {
+      "id": "8",
+      "name": "Light Leak 08",
+      "media": "media/8.mp4",
+      "preview": "preview/8.mp4",
+      "markerFrame": 14,
+      "markerSeconds": 0.56,
+      "durationSeconds": 1.2
+    },
+    {
+      "id": "9",
+      "name": "Light Leak 09",
+      "media": "media/9.mp4",
+      "preview": "preview/9.mp4",
+      "markerFrame": 13,
+      "markerSeconds": 0.52,
+      "durationSeconds": 1.48
+    },
+    {
+      "id": "10",
+      "name": "Light Leak 10",
+      "media": "media/10.mp4",
+      "preview": "preview/10.mp4",
+      "markerFrame": 9,
+      "markerSeconds": 0.36,
+      "durationSeconds": 0.8
+    }
+  ],
+  "blendModeIndex": 8,
+  "nativeWidth": 1920,
+  "nativeHeight": 1080
+}

@@ -1,0 +1,154 @@
+{
+  "id": "hook-captions",
+  "label": "Hook & Captions",
+  "kind": "mogrt",
+  "frame": "wide",
+  "canvas": "#202120",
+  "library": "hook-captions",
+  "groups": [
+    "Captions",
+    "Hooks"
+  ],
+  "items": [
+    {
+      "id": "caption-01",
+      "name": "Caption 01",
+      "group": "Captions",
+      "media": "Captions/Caption_01.mogrt",
+      "thumb": "thumbs/caption-01.png"
+    },
+    {
+      "id": "caption-02",
+      "name": "Caption 02",
+      "group": "Captions",
+      "media": "Captions/Caption_02.mogrt",
+      "thumb": "thumbs/caption-02.png"
+    },
+    {
+      "id": "caption-03",
+      "name": "Caption 03",
+      "group": "Captions",
+      "media": "Captions/Caption_03.mogrt",
+      "thumb": "thumbs/caption-03.png"
+    },
+    {
+      "id": "caption-04",
+      "name": "Caption 04",
+      "group": "Captions",
+      "media": "Captions/Caption_04.mogrt",
+      "thumb": "thumbs/caption-04.png"
+    },
+    {
+      "id": "caption-05",
+      "name": "Caption 05",
+      "group": "Captions",
+      "media": "Captions/Caption_05.mogrt",
+      "thumb": "thumbs/caption-05.png"
+    },
+    {
+      "id": "caption-06",
+      "name": "Caption 06",
+      "group": "Captions",
+      "media": "Captions/Caption_06.mogrt",
+      "thumb": "thumbs/caption-06.png"
+    },
+    {
+      "id": "caption-07",
+      "name": "Caption 07",
+      "group": "Captions",
+      "media": "Captions/Caption_07.mogrt",
+      "thumb": "thumbs/caption-07.png"
+    },
+    {
+      "id": "caption-08",
+      "name": "Caption 08",
+      "group": "Captions",
+      "media": "Captions/Caption_08.mogrt",
+      "thumb": "thumbs/caption-08.png"
+    },
+    {
+      "id": "caption-09",
+      "name": "Caption 09",
+      "group": "Captions",
+      "media": "Captions/Caption_09.mogrt",
+      "thumb": "thumbs/caption-09.png"
+    },
+    {
+      "id": "caption-10",
+      "name": "Caption 10",
+      "group": "Captions",
+      "media": "Captions/Caption_10.mogrt",
+      "thumb": "thumbs/caption-10.png"
+    },
+    {
+      "id": "caption-11",
+      "name": "Caption 11",
+      "group": "Captions",
+      "media": "Captions/Caption_11.mogrt",
+      "thumb": "thumbs/caption-11.png"
+    },
+    {
+      "id": "caption-12",
+      "name": "Caption 12",
+      "group": "Captions",
+      "media": "Captions/Caption_12.mogrt",
+      "thumb": "thumbs/caption-12.png"
+    },
+    {
+      "id": "caption-13",
+      "name": "Caption 13",
+      "group": "Captions",
+      "media": "Captions/Caption_13.mogrt",
+      "thumb": "thumbs/caption-13.png"
+    },
+    {
+      "id": "caption-14",
+      "name": "Caption 14",
+      "group": "Captions",
+      "media": "Captions/Caption_14.mogrt",
+      "thumb": "thumbs/caption-14.png"
+    },
+    {
+      "id": "caption-15",
+      "name": "Caption 15",
+      "group": "Captions",
+      "media": "Captions/Caption_15.mogrt",
+      "thumb": "thumbs/caption-15.png"
+    },
+    {
+      "id": "hook-01",
+      "name": "Hook 01",
+      "group": "Hooks",
+      "media": "Hooks/Hook_01.mogrt",
+      "thumb": "thumbs/hook-01.png"
+    },
+    {
+      "id": "hook-02",
+      "name": "Hook 02",
+      "group": "Hooks",
+      "media": "Hooks/Hook_02.mogrt",
+      "thumb": "thumbs/hook-02.png"
+    },
+    {
+      "id": "hook-03",
+      "name": "Hook 03",
+      "group": "Hooks",
+      "media": "Hooks/Hook_03.mogrt",
+      "thumb": "thumbs/hook-03.png"
+    },
+    {
+      "id": "hook-04",
+      "name": "Hook 04",
+      "group": "Hooks",
+      "media": "Hooks/Hook_04.mogrt",
+      "thumb": "thumbs/hook-04.png"
+    },
+    {
+      "id": "hook-05",
+      "name": "Hook 05",
+      "group": "Hooks",
+      "media": "Hooks/Hook_05.mogrt",
+      "thumb": "thumbs/hook-05.png"
+    }
+  ]
+}

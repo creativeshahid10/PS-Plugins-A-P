@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!--
+  PixelSquad Creative Suite
+  Copyright (C) 2026 PixelSquad. All Rights Reserved.
+  Author: Mohammed Shahid <hello@pixelsquad.in>
+  Proprietary & Confidential.
+-->
+
+<html lang="en">
+<head>
+  <script src="CSInterface.js"></script>
+  <meta charset="UTF-8" />
+  <title>PSText</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    html, body {
+      margin: 0; padding: 0;
+      width: 100%; height: 100%;
+      background: #050508;
+      overflow: hidden;
+      font-family: 'Inter Tight', sans-serif;
+    }
+    #appUI {
+      display: block;
+      width: 100%; height: 100%;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body class="app app--txtfx">
+
+  <!-- MAIN INTERFACE -->
+  <div id="appUI">
+    <div class="views">
+      <div class="views-track">
+
+        <!-- TXTFX VIEW -->
+        <div class="view">
+          <div class="content" id="txtfxContent" tabindex="0">
+            <div class="header">
+              <div class="logo">
+                <img src="../assets/pixel_squad_logo.svg" class="ps-header-logo" alt="Pixel Squad">
+                <div class="pstext-title">PSText</div>
+                <div class="brand-badge">BY PIXEL SQUAD</div>
+              </div>
+              <div class="tabs">
+                <button class="tab active" id="tabTXT">PSText</button>
+                <button class="tab" id="tab3D">3D TRACKING</button>
+                <span class="tab-underline"></span>
+              </div>
+            </div>
+
+            <!-- CATEGORY FILTER BAR -->
+            <div class="category-nav">
+              <button class="cat-pill" data-cat="classic">CLASSIC (22)</button>
+              <button class="cat-pill" data-cat="glitch">GLITCH &amp; CYBER (8)</button>
+              <button class="cat-pill active" data-cat="all">ALL (60)</button>
+              <button class="cat-pill" data-cat="reels">VIRAL REELS (8)</button>
+              <button class="cat-pill" data-cat="cinema">CINEMATIC (8)</button>
+              <button class="cat-pill" data-cat="kinetic">KINETIC (8)</button>
+              <button class="cat-pill" data-cat="minimal">MINIMAL (6)</button>
+            </div>
+
+            <!-- 60 PRESETS GRID -->
+            <div class="fx-grid">
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt1"><div class="fx-preview"><img src="../assets/lyrics1.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 1</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt2"><div class="fx-preview"><img src="../assets/lyrics2.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 2</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt3"><div class="fx-preview"><img src="../assets/lyrics3.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 3</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt4"><div class="fx-preview"><img src="../assets/lyrics4.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 4</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt5"><div class="fx-preview"><img src="../assets/lyrics5.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 5</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt6"><div class="fx-preview"><img src="../assets/lyrics6.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 6</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt7"><div class="fx-preview"><img src="../assets/lyrics7.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 7</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt8"><div class="fx-preview"><img src="../assets/lyrics8.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 8</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt9"><div class="fx-preview"><img src="../assets/lyrics9.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 9</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt10"><div class="fx-preview"><img src="../assets/lyrics10.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 10</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt11"><div class="fx-preview"><img src="../assets/lyrics11.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 11</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt12"><div class="fx-preview"><img src="../assets/lyrics12.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 12</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt13"><div class="fx-preview"><img src="../assets/lyrics13.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 13</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt14"><div class="fx-preview"><img src="../assets/lyrics14.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 14</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt15"><div class="fx-preview"><img src="../assets/lyrics15.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 15</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt16"><div class="fx-preview"><img src="../assets/lyrics16.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 16</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt17"><div class="fx-preview"><img src="../assets/lyrics17.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 17</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt18"><div class="fx-preview"><img src="../assets/lyrics18.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 18</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt19"><div class="fx-preview"><img src="../assets/lyrics19.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 19</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt20"><div class="fx-preview"><img src="../assets/lyrics20.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 20</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt21"><div class="fx-preview"><img src="../assets/lyrics21.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 21</div></div></div>
+  <div class="fx-card-wrap" data-cat="classic"><div class="fx-card" data-fx="txt22"><div class="fx-preview"><img src="../assets/lyrics22.gif" class="fx-gif"></div><div class="fx-label">PSText Animation 22</div></div></div>
+  <div class="fx-card-wrap" data-cat="glitch">
+    <div class="fx-card pro-card" data-fx="pro_glitch1">
+      <div class="fx-preview pro-preview preview-pro_glitch1">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-glitch-text">RGB GLITCH</div>
+      </div>
+      <div class="fx-label">RGB Chromatic Glitch</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="glitch">
+    <div class="fx-card pro-card" data-fx="pro_glitch2">
+      <div class="fx-preview pro-preview preview-pro_glitch2">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-decoder-text">> SYSTEM_</div>
+      </div>
+      <div class="fx-label">Cyber Decoder</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="glitch">
+    <div class="fx-card pro-card" data-fx="pro_glitch3">
+      <div class="fx-preview pro-preview preview-pro_glitch3">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-vhs-text">CRT // VHS</div>
+      </div>
+      <div class="fx-label">CRT VHS Distortion</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="glitch">
+    <div class="fx-card pro-card" data-fx="pro_glitch4">
+      <div class="fx-preview pro-preview preview-pro_glitch4">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-hud-text">[ TARGET ]</div>
+      </div>
+      <div class="fx-label">Hologram HUD Target</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="glitch">
+    <div class="fx-card pro-card" data-fx="pro_glitch5">
+      <div class="fx-preview pro-preview preview-pro_glitch5">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-matrix-text">MATRIX 01</div>
+      </div>
+      <div class="fx-label">Matrix Digital Rain</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="glitch">
+    <div class="fx-card pro-card" data-fx="pro_glitch6">
+      <div class="fx-preview pro-preview preview-pro_glitch6">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-pixel-text">8-BIT PIXEL</div>
+      </div>
+      <div class="fx-label">8-Bit Pixel Mosaic</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="glitch">
+    <div class="fx-card pro-card" data-fx="pro_glitch7">
+      <div class="fx-preview pro-preview preview-pro_glitch7">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-slicetear-text">BAD TV SLICE</div>
+      </div>
+      <div class="fx-label">Bad TV Sliced Tear</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="glitch">
+    <div class="fx-card pro-card" data-fx="pro_glitch8">
+      <div class="fx-preview pro-preview preview-pro_glitch8">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-wireframe-text">WIREFRAME</div>
+      </div>
+      <div class="fx-label">Cyber Wireframe</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="reels">
+    <div class="fx-card pro-card" data-fx="pro_reels1">
+      <div class="fx-preview pro-preview preview-pro_reels1">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-reels-text">BOUNCE POP</div>
+      </div>
+      <div class="fx-label">Viral Bounce Pop</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="reels">
+    <div class="fx-card pro-card" data-fx="pro_reels2">
+      <div class="fx-preview pro-preview preview-pro_reels2">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-neon-text">NEON GLOW</div>
+      </div>
+      <div class="fx-label">Neon Tube Glow</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="reels">
+    <div class="fx-card pro-card" data-fx="pro_reels3">
+      <div class="fx-preview pro-preview preview-pro_reels3">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-box-badge">STICKER</div>
+      </div>
+      <div class="fx-label">Boxed Sticker Pop</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="reels">
+    <div class="fx-card pro-card" data-fx="pro_reels4">
+      <div class="fx-preview pro-preview preview-pro_reels4">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-fire-text">FIRE IMPACT</div>
+      </div>
+      <div class="fx-label">Fire Impact Caption</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="reels">
+    <div class="fx-card pro-card" data-fx="pro_reels5">
+      <div class="fx-preview pro-preview preview-pro_reels5">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-karaoke-text">WORD POP</div>
+      </div>
+      <div class="fx-label">Karaoke Word Pop</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="reels">
+    <div class="fx-card pro-card" data-fx="pro_reels6">
+      <div class="fx-preview pro-preview preview-pro_reels6">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-marker-text">HIGHLIGHT</div>
+      </div>
+      <div class="fx-label">Marker Pen Swipe</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="reels">
+    <div class="fx-card pro-card" data-fx="pro_reels7">
+      <div class="fx-preview pro-preview preview-pro_reels7">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-bubble-text">CHAT POP</div>
+      </div>
+      <div class="fx-label">Chat Bubble Pop</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="reels">
+    <div class="fx-card pro-card" data-fx="pro_reels8">
+      <div class="fx-preview pro-preview preview-pro_reels8">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-squash-text">SQUASH POP</div>
+      </div>
+      <div class="fx-label">Emoji Text Bounce</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="cinema">
+    <div class="fx-card pro-card" data-fx="pro_cinema1">
+      <div class="fx-preview pro-preview preview-pro_cinema1">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-cinema-text">ATMOSPHERE</div>
+      </div>
+      <div class="fx-label">Atmospheric Blur</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="cinema">
+    <div class="fx-card pro-card" data-fx="pro_cinema2">
+      <div class="fx-preview pro-preview preview-pro_cinema2">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-minimal-text">MINIMAL DRIFT</div>
+      </div>
+      <div class="fx-label">Deep Space Drift</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="cinema">
+    <div class="fx-card pro-card" data-fx="pro_cinema3">
+      <div class="fx-preview pro-preview preview-pro_cinema3">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-gold-text">GOLD SHIMMER</div>
+      </div>
+      <div class="fx-label">Luxury Gold Shimmer</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="cinema">
+    <div class="fx-card pro-card" data-fx="pro_cinema4">
+      <div class="fx-preview pro-preview preview-pro_cinema4">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-dust-text">DISPERSAL</div>
+      </div>
+      <div class="fx-label">Sand Dust Disperse</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="cinema">
+    <div class="fx-card pro-card" data-fx="pro_cinema5">
+      <div class="fx-preview pro-preview preview-pro_cinema5">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-push-text">DUNE PUSH</div>
+      </div>
+      <div class="fx-label">3D Blockbuster Push</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="cinema">
+    <div class="fx-card pro-card" data-fx="pro_cinema6">
+      <div class="fx-preview pro-preview preview-pro_cinema6">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-filmburn-text">16MM BURN</div>
+      </div>
+      <div class="fx-label">Film Burn 16mm</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="cinema">
+    <div class="fx-card pro-card" data-fx="pro_cinema7">
+      <div class="fx-preview pro-preview preview-pro_cinema7">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-scope-text">SCOPE WIPE</div>
+      </div>
+      <div class="fx-label">Cinematic Scope Wipe</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="cinema">
+    <div class="fx-card pro-card" data-fx="pro_cinema8">
+      <div class="fx-preview pro-preview preview-pro_cinema8">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-cutout-text">LUMA CUT</div>
+      </div>
+      <div class="fx-label">Luma Silhouette Cutout</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="kinetic">
+    <div class="fx-card pro-card" data-fx="pro_kinetic1">
+      <div class="fx-preview pro-preview preview-pro_kinetic1">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-kinetic-text">3D FLIP</div>
+      </div>
+      <div class="fx-label">3D Kinetic Flip</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="kinetic">
+    <div class="fx-card pro-card" data-fx="pro_kinetic2">
+      <div class="fx-preview pro-preview preview-pro_kinetic2">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-slot-text">SLOT ODO</div>
+      </div>
+      <div class="fx-label">Slot Machine Odo</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="kinetic">
+    <div class="fx-card pro-card" data-fx="pro_kinetic3">
+      <div class="fx-preview pro-preview preview-pro_kinetic3">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-liquid-text">LIQUID WAVE</div>
+      </div>
+      <div class="fx-label">Liquid Color Wave</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="kinetic">
+    <div class="fx-card pro-card" data-fx="pro_kinetic4">
+      <div class="fx-preview pro-preview preview-pro_kinetic4">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-rubber-text">ELASTIC</div>
+      </div>
+      <div class="fx-label">Rubber Band Elastic</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="kinetic">
+    <div class="fx-card pro-card" data-fx="pro_kinetic5">
+      <div class="fx-preview pro-preview preview-pro_kinetic5">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-gravity-text">GRAVITY SLAM</div>
+      </div>
+      <div class="fx-label">Gravity Drop Slam</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="kinetic">
+    <div class="fx-card pro-card" data-fx="pro_kinetic6">
+      <div class="fx-preview pro-preview preview-pro_kinetic6">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-marquee-text">MARQUEE • TICKER</div>
+      </div>
+      <div class="fx-label">Infinite Marquee</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="kinetic">
+    <div class="fx-card pro-card" data-fx="pro_kinetic7">
+      <div class="fx-preview pro-preview preview-pro_kinetic7">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-ripple-text">WAVE RIPPLE</div>
+      </div>
+      <div class="fx-label">Stagger Wave Ripple</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="kinetic">
+    <div class="fx-card pro-card" data-fx="pro_kinetic8">
+      <div class="fx-preview pro-preview preview-pro_kinetic8">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-splitslide-text">SPLIT SLIDE</div>
+      </div>
+      <div class="fx-label">Split Slide Stagger</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="minimal">
+    <div class="fx-card pro-card" data-fx="pro_minimal1">
+      <div class="fx-preview pro-preview preview-pro_minimal1">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-linewipe-text">LINE WIPE</div>
+      </div>
+      <div class="fx-label">Smooth Line Wipe</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="minimal">
+    <div class="fx-card pro-card" data-fx="pro_minimal2">
+      <div class="fx-preview pro-preview preview-pro_minimal2">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-drawline-text">UNDERLINE</div>
+      </div>
+      <div class="fx-label">Draw Underline</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="minimal">
+    <div class="fx-card pro-card" data-fx="pro_minimal3">
+      <div class="fx-preview pro-preview preview-pro_minimal3">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-counter-text">100,000+</div>
+      </div>
+      <div class="fx-label">Number Counter</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="minimal">
+    <div class="fx-card pro-card" data-fx="pro_minimal4">
+      <div class="fx-preview pro-preview preview-pro_minimal4">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-terminal-text">$ npm run build</div>
+      </div>
+      <div class="fx-label">Code Terminal</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="minimal">
+    <div class="fx-card pro-card" data-fx="pro_minimal5">
+      <div class="fx-preview pro-preview preview-pro_minimal5">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-float-text">PODCAST TITLE</div>
+      </div>
+      <div class="fx-label">Podcast Float</div>
+    </div>
+  </div>
+  <div class="fx-card-wrap" data-cat="minimal">
+    <div class="fx-card pro-card" data-fx="pro_minimal6">
+      <div class="fx-preview pro-preview preview-pro_minimal6">
+        <span class="pro-tag">PRO</span>
+        <div class="demo-fadeup-text">FADE UP</div>
+      </div>
+      <div class="fx-label">Stagger Fade Up</div>
+    </div>
+  </div>
+            </div>
+
+            <div class="go-top">
+              <button id="goTopBtn">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+                Back to top
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 3D TRACKING VIEW -->
+        <div class="view">
+          <div class="content" id="trackingContent" tabindex="0">
+            <div class="header">
+              <div class="logo">
+                <img src="../assets/pixel_squad_logo.svg" class="ps-header-logo" alt="Pixel Squad">
+                <div class="pstext-title">PSText</div>
+                <div class="brand-badge">BY PIXEL SQUAD</div>
+              </div>
+              <div class="tabs">
+                <button class="tab" id="tabTXT2">PSText</button>
+                <button class="tab active" id="tab3D2">3D TRACKING</button>
+                <span class="tab-underline"></span>
+              </div>
+            </div>
+
+            <div class="tracker-steps">
+              <div class="step-card">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                  <div class="step-title">Add 3D Camera Tracker</div>
+                  <div class="step-desc">Select footage in timeline and click button below.</div>
+                  <button class="tracker-btn" id="addTrackerBtn">Track Camera</button>
+                </div>
+              </div>
+              <div class="step-card">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                  <div class="step-title">Create Camera &amp; Solid</div>
+                  <div class="step-desc">In comp viewer, right click track points: Create Camera and Solid.</div>
+                </div>
+              </div>
+              <div class="step-card">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                  <div class="step-title">Build From Tracking Point</div>
+                  <div class="step-desc">Select the created track solid and click button below.</div>
+                  <button class="tracker-btn tracker-btn--primary" id="buildFromSolidBtn">Build From Tracking Point</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FLOATING INPUT -->
+    <div class="floating-input">
+      <input type="text" id="lyricsInput" placeholder="ADD TEXT. SEPARATE WORDS WITH ," />
+    </div>
+    <div id="successToast" class="success-toast">Applied!</div>
+  </div>
+
+  <script src="../js/main.js"></script>
+<div style="text-align:center;font-size:9.5px;color:#64748b;margin-top:12px;padding:4px;border-top:1px solid #1e293b;">PixelSquad © 2026 Mohammed Shahid • hello@pixelsquad.in</div>
+</body>
+</html>

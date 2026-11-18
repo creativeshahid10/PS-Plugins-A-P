@@ -1,0 +1,54 @@
+{
+  "packs": [
+    {
+      "id": "light-leak",
+      "label": "Light Leak",
+      "kind": "transition",
+      "count": 10,
+      "badge": "NEW"
+    },
+    {
+      "id": "text-animation",
+      "label": "Text Animation",
+      "kind": "mogrt",
+      "count": 40
+    },
+    {
+      "id": "camera-transitions",
+      "label": "Camera Transitions",
+      "kind": "mogrt",
+      "count": 55,
+      "badge": "NEW"
+    },
+    {
+      "id": "transitions",
+      "label": "Transitions",
+      "kind": "mogrt",
+      "count": 67,
+      "badge": "NEW"
+    },
+    {
+      "id": "hook-captions",
+      "label": "Hook & Captions",
+      "kind": "mogrt",
+      "count": 20,
+      "badge": "NEW"
+    },
+    {
+      "id": "text-presets",
+      "label": "Text Presets",
+      "kind": "mogrt",
+      "count": 15,
+      "badge": "NEW"
+    }
+  ],
+  "bundledLibraries": [],
+  "libraryHints": [
+    "~/Desktop/Flex Backups/REXPORTED",
+    "~/Desktop/REXPORTED",
+    "~/Documents/Flex ULTIMATE/REXPORTED",
+    "~/Movies/Flex ULTIMATE/REXPORTED"
+  ],
+  "libraryRemote": "https://raw.githubusercontent.com/Captureflex1/FlexGUI/main/library-manifest.json",
+  "libraryExtra": "https://api.github.com/repos/Captureflex1/FlexGUI/releases/tags/library-extra"
+}

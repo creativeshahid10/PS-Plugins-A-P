@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  PixelSquad Creative Suite
+  Copyright (C) 2026 PixelSquad. All Rights Reserved.
+  Author: Mohammed Shahid <hello@pixelsquad.in>
+  Proprietary & Confidential.
+-->
+<ExtensionManifest Version="6.0"
+  ExtensionBundleId="com.pixelsquad.pstext.panel"
+  ExtensionBundleName="PSText"
+  ExtensionBundleVersion="1.0">
+
+  <ExtensionBundleDescription>
+    PSText — Text Effects Panel for After Effects by Pixel Squad
+  </ExtensionBundleDescription>
+
+  <ExtensionList>
+    <Extension Id="com.pixelsquad.pstext.panel.main" Version="1.0.0"/>
+  </ExtensionList>
+
+  <ExecutionEnvironment>
+    <HostList>
+      <Host Name="AEFT" Version="[13.0,99.9]"/>
+    </HostList>
+    <LocaleList>
+      <Locale Code="All"/>
+    </LocaleList>
+    <RequiredRuntimeList>
+      <RequiredRuntime Name="CSXS" Version="6.0"/>
+    </RequiredRuntimeList>
+  </ExecutionEnvironment>
+
+  <DispatchInfoList>
+    <Extension Id="com.pixelsquad.pstext.panel.main">
+      <DispatchInfo>
+
+        <Resources>
+          <MainPath>./html/index.html</MainPath>
+<ScriptPath>./js/jsx/applyTextFX.jsx</ScriptPath>
+          <CEFCommandLine>
+            <Parameter>--enable-nodejs</Parameter>
+          </CEFCommandLine>
+        </Resources>
+
+        <Lifecycle>
+          <AutoVisible>true</AutoVisible>
+        </Lifecycle>
+
+        <UI>
+          <Type>Panel</Type>
+          <Menu>PixelSquad Text</Menu>
+          <Geometry>
+            <Size>
+              <Width>320</Width>
+              <Height>400</Height>
+            </Size>
+          </Geometry>
+        </UI>
+
+      </DispatchInfo>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>

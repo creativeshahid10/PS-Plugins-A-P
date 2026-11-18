@@ -1,0 +1,336 @@
+{
+  "id": "text-animation",
+  "label": "Text Animation",
+  "kind": "mogrt",
+  "frame": "wide",
+  "canvas": "#202120",
+  "library": "text-animation",
+  "groups": [
+    "Basic",
+    "Elastic",
+    "Neon",
+    "Typewriter"
+  ],
+  "items": [
+    {
+      "id": "basic-text-animation-basic-01",
+      "name": "Text Animation_Basic_01",
+      "group": "Basic",
+      "media": "Basic/Text Animation_Basic_01.mogrt",
+      "thumb": "thumbs/basic-text-animation-basic-01.png",
+      "preview": "previews/basic-text-animation-basic-01.mp4"
+    },
+    {
+      "id": "basic-text-animation-basic-03",
+      "name": "Text Animation_Basic_03",
+      "group": "Basic",
+      "media": "Basic/Text Animation_Basic_03.mogrt",
+      "thumb": "thumbs/basic-text-animation-basic-03.png",
+      "preview": "previews/basic-text-animation-basic-03.mp4"
+    },
+    {
+      "id": "basic-text-animation-basic-04",
+      "name": "Text Animation_Basic_04",
+      "group": "Basic",
+      "media": "Basic/Text Animation_Basic_04.mogrt",
+      "thumb": "thumbs/basic-text-animation-basic-04.png",
+      "preview": "previews/basic-text-animation-basic-04.mp4"
+    },
+    {
+      "id": "basic-text-animation-basic-08",
+      "name": "Text Animation_Basic_08",
+      "group": "Basic",
+      "media": "Basic/Text Animation_Basic_08.mogrt",
+      "thumb": "thumbs/basic-text-animation-basic-08.png",
+      "preview": "previews/basic-text-animation-basic-08.mp4"
+    },
+    {
+      "id": "basic-text-animation-basic-09",
+      "name": "Text Animation_Basic_09",
+      "group": "Basic",
+      "media": "Basic/Text Animation_Basic_09.mogrt",
+      "thumb": "thumbs/basic-text-animation-basic-09.png",
+      "preview": "previews/basic-text-animation-basic-09.mp4"
+    },
+    {
+      "id": "basic-text-animation-basic-10",
+      "name": "Text Animation_Basic_10",
+      "group": "Basic",
+      "media": "Basic/Text Animation_Basic_10.mogrt",
+      "thumb": "thumbs/basic-text-animation-basic-10.png",
+      "preview": "previews/basic-text-animation-basic-10.mp4"
+    },
+    {
+      "id": "basic-text-animation-basic-12",
+      "name": "Text Animation_Basic_12",
+      "group": "Basic",
+      "media": "Basic/Text Animation_Basic_12.mogrt",
+      "thumb": "thumbs/basic-text-animation-basic-12.png",
+      "preview": "previews/basic-text-animation-basic-12.mp4"
+    },
+    {
+      "id": "basic-text-animation-basic-15",
+      "name": "Text Animation_Basic_15",
+      "group": "Basic",
+      "media": "Basic/Text Animation_Basic_15.mogrt",
+      "thumb": "thumbs/basic-text-animation-basic-15.png",
+      "preview": "previews/basic-text-animation-basic-15.mp4"
+    },
+    {
+      "id": "basic-text-animation-basic-16",
+      "name": "Text Animation_Basic_16",
+      "group": "Basic",
+      "media": "Basic/Text Animation_Basic_16.mogrt",
+      "thumb": "thumbs/basic-text-animation-basic-16.png",
+      "preview": "previews/basic-text-animation-basic-16.mp4"
+    },
+    {
+      "id": "basic-text-animation-basic-20",
+      "name": "Text Animation_Basic_20",
+      "group": "Basic",
+      "media": "Basic/Text Animation_Basic_20.mogrt",
+      "thumb": "thumbs/basic-text-animation-basic-20.png",
+      "preview": "previews/basic-text-animation-basic-20.mp4"
+    },
+    {
+      "id": "basic-text-animation-basic-21",
+      "name": "Text Animation_Basic_21",
+      "group": "Basic",
+      "media": "Basic/Text Animation_Basic_21.mogrt",
+      "thumb": "thumbs/basic-text-animation-basic-21.png",
+      "preview": "previews/basic-text-animation-basic-21.mp4"
+    },
+    {
+      "id": "basic-text-animation-basic-22",
+      "name": "Text Animation_Basic_22",
+      "group": "Basic",
+      "media": "Basic/Text Animation_Basic_22.mogrt",
+      "thumb": "thumbs/basic-text-animation-basic-22.png",
+      "preview": "previews/basic-text-animation-basic-22.mp4"
+    },
+    {
+      "id": "basic-text-animation-basic-23",
+      "name": "Text Animation_Basic_23",
+      "group": "Basic",
+      "media": "Basic/Text Animation_Basic_23.mogrt",
+      "thumb": "thumbs/basic-text-animation-basic-23.png",
+      "preview": "previews/basic-text-animation-basic-23.mp4"
+    },
+    {
+      "id": "basic-text-animation-basic-24",
+      "name": "Text Animation_Basic_24",
+      "group": "Basic",
+      "media": "Basic/Text Animation_Basic_24.mogrt",
+      "thumb": "thumbs/basic-text-animation-basic-24.png",
+      "preview": "previews/basic-text-animation-basic-24.mp4"
+    },
+    {
+      "id": "basic-text-animation-basic-25",
+      "name": "Text Animation_Basic_25",
+      "group": "Basic",
+      "media": "Basic/Text Animation_Basic_25.mogrt",
+      "thumb": "thumbs/basic-text-animation-basic-25.png",
+      "preview": "previews/basic-text-animation-basic-25.mp4"
+    },
+    {
+      "id": "elastic-text-animation-elastic-01",
+      "name": "Text Animation_Elastic_01",
+      "group": "Elastic",
+      "media": "Elastic/Text Animation_Elastic_01.mogrt",
+      "thumb": "thumbs/elastic-text-animation-elastic-01.png",
+      "preview": "previews/elastic-text-animation-elastic-01.mp4"
+    },
+    {
+      "id": "elastic-text-animation-elastic-03",
+      "name": "Text Animation_Elastic_03",
+      "group": "Elastic",
+      "media": "Elastic/Text Animation_Elastic_03.mogrt",
+      "thumb": "thumbs/elastic-text-animation-elastic-03.png",
+      "preview": "previews/elastic-text-animation-elastic-03.mp4"
+    },
+    {
+      "id": "elastic-text-animation-elastic-04",
+      "name": "Text Animation_Elastic_04",
+      "group": "Elastic",
+      "media": "Elastic/Text Animation_Elastic_04.mogrt",
+      "thumb": "thumbs/elastic-text-animation-elastic-04.png",
+      "preview": "previews/elastic-text-animation-elastic-04.mp4"
+    },
+    {
+      "id": "elastic-text-animation-elastic-18",
+      "name": "Text Animation_Elastic_18",
+      "group": "Elastic",
+      "media": "Elastic/Text Animation_Elastic_18.mogrt",
+      "thumb": "thumbs/elastic-text-animation-elastic-18.png",
+      "preview": "previews/elastic-text-animation-elastic-18.mp4"
+    },
+    {
+      "id": "elastic-text-animation-elastic-19",
+      "name": "Text Animation_Elastic_19",
+      "group": "Elastic",
+      "media": "Elastic/Text Animation_Elastic_19.mogrt",
+      "thumb": "thumbs/elastic-text-animation-elastic-19.png",
+      "preview": "previews/elastic-text-animation-elastic-19.mp4"
+    },
+    {
+      "id": "elastic-text-animation-elastic-20",
+      "name": "Text Animation_Elastic_20",
+      "group": "Elastic",
+      "media": "Elastic/Text Animation_Elastic_20.mogrt",
+      "thumb": "thumbs/elastic-text-animation-elastic-20.png",
+      "preview": "previews/elastic-text-animation-elastic-20.mp4"
+    },
+    {
+      "id": "elastic-text-animation-elastic-21",
+      "name": "Text Animation_Elastic_21",
+      "group": "Elastic",
+      "media": "Elastic/Text Animation_Elastic_21.mogrt",
+      "thumb": "thumbs/elastic-text-animation-elastic-21.png",
+      "preview": "previews/elastic-text-animation-elastic-21.mp4"
+    },
+    {
+      "id": "elastic-text-animation-elastic-29",
+      "name": "Text Animation_Elastic_29",
+      "group": "Elastic",
+      "media": "Elastic/Text Animation_Elastic_29.mogrt",
+      "thumb": "thumbs/elastic-text-animation-elastic-29.png",
+      "preview": "previews/elastic-text-animation-elastic-29.mp4"
+    },
+    {
+      "id": "elastic-text-animation-elastic-30",
+      "name": "Text Animation_Elastic_30",
+      "group": "Elastic",
+      "media": "Elastic/Text Animation_Elastic_30.mogrt",
+      "thumb": "thumbs/elastic-text-animation-elastic-30.png",
+      "preview": "previews/elastic-text-animation-elastic-30.mp4"
+    },
+    {
+      "id": "elastic-text-animation-elastic-45",
+      "name": "Text Animation_Elastic_45",
+      "group": "Elastic",
+      "media": "Elastic/Text Animation_Elastic_45.mogrt",
+      "thumb": "thumbs/elastic-text-animation-elastic-45.png",
+      "preview": "previews/elastic-text-animation-elastic-45.mp4"
+    },
+    {
+      "id": "elastic-text-animation-elastic-47",
+      "name": "Text Animation_Elastic_47",
+      "group": "Elastic",
+      "media": "Elastic/Text Animation_Elastic_47.mogrt",
+      "thumb": "thumbs/elastic-text-animation-elastic-47.png",
+      "preview": "previews/elastic-text-animation-elastic-47.mp4"
+    },
+    {
+      "id": "elastic-text-animation-elastic-48",
+      "name": "Text Animation_Elastic_48",
+      "group": "Elastic",
+      "media": "Elastic/Text Animation_Elastic_48.mogrt",
+      "thumb": "thumbs/elastic-text-animation-elastic-48.png",
+      "preview": "previews/elastic-text-animation-elastic-48.mp4"
+    },
+    {
+      "id": "neon-text-animation-neon-01",
+      "name": "Text Animation_Neon_01",
+      "group": "Neon",
+      "media": "Neon/Text Animation_Neon_01.mogrt",
+      "thumb": "thumbs/neon-text-animation-neon-01.png",
+      "preview": "previews/neon-text-animation-neon-01.mp4"
+    },
+    {
+      "id": "neon-text-animation-neon-02",
+      "name": "Text Animation_Neon_02",
+      "group": "Neon",
+      "media": "Neon/Text Animation_Neon_02.mogrt",
+      "thumb": "thumbs/neon-text-animation-neon-02.png",
+      "preview": "previews/neon-text-animation-neon-02.mp4"
+    },
+    {
+      "id": "neon-text-animation-neon-03",
+      "name": "Text Animation_Neon_03",
+      "group": "Neon",
+      "media": "Neon/Text Animation_Neon_03.mogrt",
+      "thumb": "thumbs/neon-text-animation-neon-03.png",
+      "preview": "previews/neon-text-animation-neon-03.mp4"
+    },
+    {
+      "id": "neon-text-animation-neon-04",
+      "name": "Text Animation_Neon_04",
+      "group": "Neon",
+      "media": "Neon/Text Animation_Neon_04.mogrt",
+      "thumb": "thumbs/neon-text-animation-neon-04.png",
+      "preview": "previews/neon-text-animation-neon-04.mp4"
+    },
+    {
+      "id": "neon-text-animation-neon-05",
+      "name": "Text Animation_Neon_05",
+      "group": "Neon",
+      "media": "Neon/Text Animation_Neon_05.mogrt",
+      "thumb": "thumbs/neon-text-animation-neon-05.png",
+      "preview": "previews/neon-text-animation-neon-05.mp4"
+    },
+    {
+      "id": "neon-text-animation-neon-06",
+      "name": "Text Animation_Neon_06",
+      "group": "Neon",
+      "media": "Neon/Text Animation_Neon_06.mogrt",
+      "thumb": "thumbs/neon-text-animation-neon-06.png",
+      "preview": "previews/neon-text-animation-neon-06.mp4"
+    },
+    {
+      "id": "typewriter-text-animation-typewriter-01",
+      "name": "Text Animation_Typewriter 01",
+      "group": "Typewriter",
+      "media": "Typewriter/Text Animation_Typewriter 01.mogrt",
+      "thumb": "thumbs/typewriter-text-animation-typewriter-01.png",
+      "preview": "previews/typewriter-text-animation-typewriter-01.mp4"
+    },
+    {
+      "id": "typewriter-text-animation-typewriter-02",
+      "name": "Text Animation_Typewriter 02",
+      "group": "Typewriter",
+      "media": "Typewriter/Text Animation_Typewriter 02.mogrt",
+      "thumb": "thumbs/typewriter-text-animation-typewriter-02.png",
+      "preview": "previews/typewriter-text-animation-typewriter-02.mp4"
+    },
+    {
+      "id": "typewriter-text-animation-typewriter-03",
+      "name": "Text Animation_Typewriter 03",
+      "group": "Typewriter",
+      "media": "Typewriter/Text Animation_Typewriter 03.mogrt",
+      "thumb": "thumbs/typewriter-text-animation-typewriter-03.png",
+      "preview": "previews/typewriter-text-animation-typewriter-03.mp4"
+    },
+    {
+      "id": "typewriter-text-animation-typewriter-04",
+      "name": "Text Animation_Typewriter 04",
+      "group": "Typewriter",
+      "media": "Typewriter/Text Animation_Typewriter 04.mogrt",
+      "thumb": "thumbs/typewriter-text-animation-typewriter-04.png",
+      "preview": "previews/typewriter-text-animation-typewriter-04.mp4"
+    },
+    {
+      "id": "typewriter-text-animation-typewriter-05",
+      "name": "Text Animation_Typewriter 05",
+      "group": "Typewriter",
+      "media": "Typewriter/Text Animation_Typewriter 05.mogrt",
+      "thumb": "thumbs/typewriter-text-animation-typewriter-05.png",
+      "preview": "previews/typewriter-text-animation-typewriter-05.mp4"
+    },
+    {
+      "id": "typewriter-text-animation-typewriter-06",
+      "name": "Text Animation_Typewriter 06",
+      "group": "Typewriter",
+      "media": "Typewriter/Text Animation_Typewriter 06.mogrt",
+      "thumb": "thumbs/typewriter-text-animation-typewriter-06.png",
+      "preview": "previews/typewriter-text-animation-typewriter-06.mp4"
+    },
+    {
+      "id": "typewriter-text-animation-typewriter-07",
+      "name": "Text Animation_Typewriter 07",
+      "group": "Typewriter",
+      "media": "Typewriter/Text Animation_Typewriter 07.mogrt",
+      "thumb": "thumbs/typewriter-text-animation-typewriter-07.png",
+      "preview": "previews/typewriter-text-animation-typewriter-07.mp4"
+    }
+  ]
+}

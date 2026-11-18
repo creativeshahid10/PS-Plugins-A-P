@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+  PixelSquad Creative Suite
+  Copyright (C) 2026 PixelSquad. All Rights Reserved.
+  Author: Mohammed Shahid <hello@pixelsquad.in>
+  Proprietary & Confidential.
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PixelSquad Motion Studio</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="brand">🚀 PIXELSQUAD MOTION</div>
+        <div class="version">AE Clean</div>
+    </div>
+
+    <!-- 9-Point Anchor Point Matrix -->
+    <div class="section">
+        <div class="section-title">🎯 9-Point Anchor Aligner</div>
+        <div class="anchor-grid">
+            <button class="anchor-btn" onclick="alignAP('TL')">↖</button>
+            <button class="anchor-btn" onclick="alignAP('TC')">↑</button>
+            <button class="anchor-btn" onclick="alignAP('TR')">↗</button>
+            <button class="anchor-btn" onclick="alignAP('ML')">←</button>
+            <button class="anchor-btn" onclick="alignAP('MC')">●</button>
+            <button class="anchor-btn" onclick="alignAP('MR')">→</button>
+            <button class="anchor-btn" onclick="alignAP('BL')">↙</button>
+            <button class="anchor-btn" onclick="alignAP('BC')">↓</button>
+            <button class="anchor-btn" onclick="alignAP('BR')">↘</button>
+        </div>
+    </div>
+
+    <!-- Easing Curve Engine -->
+    <div class="section">
+        <div class="section-title">📈 Easing Curves & Speed</div>
+        <div class="grid-3">
+            <button onclick="easeCurve('EasyEase')">⚡ Easy Ease</button>
+            <button onclick="easeCurve('Smooth')">🌊 Smooth 65</button>
+            <button onclick="easeCurve('Snap')">💥 Fast Snap</button>
+            <button onclick="easeCurve('Bounce')">🏀 Bounce</button>
+            <button onclick="easeCurve('Elastic')">🧲 Elastic</button>
+            <button onclick="easeCurve('Expo')">📐 Exponential</button>
+        </div>
+    </div>
+
+    <!-- Layer Workflow & Rigs -->
+    <div class="section">
+        <div class="section-title">🛠️ Rigging & Layer Automation</div>
+        <div class="grid-2">
+            <button class="primary" onclick="createNull()">🔗 Link To Null</button>
+            <button onclick="stagger(2)">⏳ Stagger +2f</button>
+            <button onclick="stagger(5)">⏳ Stagger +5f</button>
+            <button onclick="stagger(10)">⏳ Stagger +10f</button>
+        </div>
+    </div>
+
+    <div class="status-bar" id="status">PixelSquad Motion Studio Ready.</div>
+
+    <script src="../js/CSInterface.js"></script>
+    <script src="../js/app.js"></script>
+<div style="text-align:center;font-size:9.5px;color:#64748b;margin-top:12px;padding:4px;border-top:1px solid #1e293b;">PixelSquad © 2026 Mohammed Shahid • hello@pixelsquad.in</div>
+
+    <div style="margin-top:14px; text-align:center;">
+        <a href="privacy_policy.html" target="_blank" style="color:#f87171; font-size:10px; text-decoration:none; font-weight:700; border:1px solid #ef4444; padding:3px 8px; border-radius:4px; display:inline-block;">
+            🛡️ Strict Legal Warning & Privacy Policy
+        </a>
+    </div>
+
+
+    <script src="../js/license_config.js"></script>
+    <script src="../js/license_manager.js"></script>
+</body>
+</html>

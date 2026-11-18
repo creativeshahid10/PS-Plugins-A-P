@@ -1,0 +1,1414 @@
+
+
+
+#cs20-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+
+#cs20-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 6px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 6px;
+}
+
+.cs20-tab {
+    flex: 1 1 auto;
+    min-width: 70px;
+    padding: 4px 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    color: #aaa;
+    font-family: inherit;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cs20-tab:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+
+#cs20-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+#cs20-toolbar .cs20-search {
+    flex: 1;
+    min-width: 0;
+}
+
+#cs20-toolbar .asset-input {
+    height: 26px;
+}
+
+.cs20-sort {
+    height: 26px;
+    max-width: 116px;
+    padding: 0 4px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    color: #aaa;
+    font-family: inherit;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    -webkit-appearance: menulist;
+    appearance: menulist;
+}
+
+.cs20-icobtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 26px;
+    height: 26px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #888;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cs20-icobtn:hover,
+.cs20-icobtn.on {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.cs20-zoom {
+    flex: 0 0 62px;
+    width: 62px;
+    height: 26px;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+
+.cs20-pane {
+    display: none;
+    min-height: 0;
+}
+
+.cs20-pane.active {
+    display: block;
+}
+
+
+#cs20-root[data-size="s"] .sc-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#cs20-root[data-size="m"] .sc-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#cs20-root[data-size="l"] .sc-grid {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#cs20-root[data-size="s"] .sc-thumb,
+#cs20-root[data-size="s"] .sc-thumb-placeholder {
+    height: 54px;
+}
+
+#cs20-root[data-size="l"] .sc-thumb,
+#cs20-root[data-size="l"] .sc-thumb-placeholder {
+    height: 128px;
+}
+
+
+#cs20-root[data-view="list"] .sc-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#cs20-root[data-view="list"] .sc-item {
+    flex-direction: row;
+    align-items: center;
+    border-radius: 7px;
+}
+
+#cs20-root[data-view="list"] .sc-item:hover {
+    transform: none;
+}
+
+#cs20-root[data-view="list"] .sc-thumb,
+#cs20-root[data-view="list"] .sc-thumb-placeholder,
+#cs20-root[data-view="list"] .ffx-thumb-box {
+    flex: 0 0 58px;
+    width: 58px;
+    height: 34px;
+    font-size: 8px;
+}
+
+#cs20-root[data-view="list"] .sc-name {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+    padding: 0 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.cs20-pane .sc-item>span {
+    top: 6px !important;
+    right: 6px !important;
+    bottom: auto !important;
+    left: auto !important;
+}
+
+#cs20-root[data-view="list"] .sc-item>span {
+    position: static !important;
+    margin-left: 6px;
+    flex: 0 0 auto;
+}
+
+#cs20-root[data-view="list"] .sc-label-dot {
+    position: static !important;
+    flex: 0 0 auto;
+    margin-left: 6px;
+}
+
+
+.cs20-arow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.cs20-path {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--primary);
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.cs20-btn {
+    height: 26px;
+    padding: 0 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    color: #aaa;
+    font-family: inherit;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cs20-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.cs20-btn.primary {
+    flex: 1;
+    background: var(--primary-dim);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.cs20-drop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 62px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px dashed rgba(255, 255, 255, 0.14);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.015);
+    color: #666;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.15s;
+}
+
+.cs20-assets.dragging .cs20-drop {
+    border-color: var(--primary);
+    border-style: solid;
+    background: var(--primary-dim);
+    color: var(--primary);
+}
+
+.cs20-ext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 72px;
+    background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+    color: var(--primary);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+#cs20-root[data-size="s"] .cs20-ext {
+    height: 54px;
+}
+
+#cs20-root[data-size="l"] .cs20-ext {
+    height: 128px;
+}
+
+#cs20-root[data-view="list"] .cs20-ext {
+    flex: 0 0 58px;
+    width: 58px;
+    height: 34px;
+    font-size: 8px;
+}
+
+.cs20-link-badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    z-index: 4;
+    padding: 1px 4px;
+    border: 1px solid var(--primary-dim);
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.65);
+    color: var(--primary);
+    font-size: 7px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.cs20-btn.danger:hover {
+    border-color: #ff4545;
+    color: #ff4545;
+}
+
+.cs20-btn[disabled] {
+    cursor: default;
+}
+
+.cs20-types {
+    margin-bottom: 8px;
+}
+
+
+.cs20-wave-box {
+    position: relative;
+    width: 100%;
+    height: 72px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #161616, #0a0a0a);
+}
+
+#cs20-root[data-size="s"] .cs20-wave-box {
+    height: 54px;
+}
+
+#cs20-root[data-size="l"] .cs20-wave-box {
+    height: 128px;
+}
+
+#cs20-root[data-view="list"] .cs20-wave-box {
+    flex: 0 0 58px;
+    width: 58px;
+    height: 34px;
+}
+
+.cs20-wave {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+
+.cs20-wave-label {
+    position: absolute;
+    left: 6px;
+    bottom: 4px;
+    color: #4a4a4a;
+    font-size: 7px;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    pointer-events: none;
+}
+
+.cs20-playhead {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.09);
+    border-right: 1px solid var(--primary);
+    pointer-events: none;
+}
+
+
+.cs20-card-import {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 6;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.72);
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.sc-item:hover .cs20-card-import {
+    display: flex;
+}
+
+.cs20-card-import:hover {
+    background: var(--primary);
+    color: #050505;
+}
+
+
+.cs20-preview-back {
+    position: fixed;
+    inset: 0;
+    z-index: 10060;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    background: rgba(0, 0, 0, 0.78);
+}
+
+.cs20-preview-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 560px;
+    max-height: 92%;
+    overflow: hidden;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    background: #101010;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.65);
+}
+
+.cs20-preview-head {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.cs20-preview-name {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #ddd;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.cs20-preview-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+    padding: 10px;
+    background: #050505;
+}
+
+.cs20-preview-media {
+    max-width: 100%;
+    max-height: 58vh;
+    object-fit: contain;
+}
+
+.cs20-preview-audio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.cs20-preview-wave {
+    width: 100%;
+    height: 96px;
+    border-radius: 6px;
+    background: #0d0d0d;
+}
+
+.cs20-preview-audio audio {
+    width: 100%;
+}
+
+.cs20-empty {
+    grid-column: 1/-1;
+    padding: 26px 14px;
+    color: #555;
+    font-size: 10px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+@media (max-width: 380px) {
+    .cs20-tab {
+        min-width: 58px;
+        padding: 4px 6px;
+        font-size: 8px;
+    }
+
+    .cs20-zoom {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sc-del,
+.sc-rename {
+    z-index: 6;
+    min-width: 18px;
+    min-height: 18px;
+    width: 18px;
+    height: 18px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, .55);
+}
+
+
+
+
+
+.sc-list .sc-item {
+    padding-right: 46px;
+}
+
+.sc-list .sc-name {
+    min-width: 0;
+}
+
+.sc-list .sc-del,
+.sc-list .sc-rename {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sc-list .sc-del {
+    right: 6px;
+}
+
+.sc-list .sc-rename {
+    right: 26px;
+}
+
+
+
+.sc-thumb-placeholder {
+    padding: 22px 24px 6px;
+    word-break: break-word;
+}
+
+
+
+
+
+.sc-list .sc-thumb-placeholder {
+    padding: 2px;
+    font-size: 7px;
+    overflow: hidden;
+}
+
+
+
+.sc-item>.sc-name {
+    min-width: 0;
+}
+
+
+
+
+
+.cs20-panes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    padding: 3px;
+    margin-bottom: 7px;
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, .025);
+}
+
+.cs20-pane-btn {
+    height: 26px;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: #6f6f6f;
+    font-family: inherit;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color .15s, background .15s;
+}
+
+.cs20-pane-btn:hover { color: #a8a8a8; background: rgba(255, 255, 255, .04); }
+.cs20-pane-btn.active { color: var(--primary); background: var(--primary-dim); }
+
+
+
+
+.cs20-preset-cats { margin-bottom: 8px; }
+
+.cs20-preset-body {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cs20-preset-empty {
+    padding: 22px 12px;
+    color: #5c5c5c;
+    font-size: 9px;
+    letter-spacing: .3px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#view-assets2.active { display: flex; flex-direction: column; min-height: 0; }
+#cs20-root { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+
+
+
+
+
+
+
+
+
+#view-assets2.presets-mode {
+    overflow: hidden;
+}
+
+#view-assets2 .cs20-pane.cs20-presets { display: none; flex-direction: column; flex: 1; min-height: 0; }
+#view-assets2 .cs20-pane.cs20-presets.active { display: flex; }
+
+.cs20-preset-split {
+    display: flex;
+    gap: 8px;
+    align-items: stretch;
+    flex: 1;
+    min-height: 0;
+    padding: 6px 6px 6px 6px;
+    box-sizing: border-box;
+}
+
+.cs20-preset-side {
+    flex: 0 0 134px;
+    min-width: 126px;
+    max-width: 142px;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-right: 2px;
+}
+
+.cs20-preset-side::-webkit-scrollbar {
+    width: 3px;
+}
+.cs20-preset-side::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 3px;
+}
+
+.cs20-preset-cat {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 32px;
+    padding: 5px 7px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.02);
+    color: #929298;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: all .14s cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.cs20-preset-cat:hover {
+    background: rgba(255, 255, 255, 0.055);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.cs20-preset-cat.active {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    box-shadow: inset 3px 0 0 var(--primary);
+}
+
+.cs20-preset-cat-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    min-width: 0;
+    flex: 1;
+}
+
+.cs20-preset-icon {
+    width: 12px;
+    height: 12px;
+    flex: 0 0 auto;
+    opacity: .75;
+}
+
+.cs20-preset-cat.active .cs20-preset-icon {
+    opacity: 1;
+    color: var(--primary);
+}
+
+.cs20-preset-cat-name {
+    flex: 1;
+    min-width: 0;
+    line-height: 1.25;
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cs20-preset-cat-badges {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    flex-shrink: 0;
+    margin-left: 2px;
+}
+
+.cs20-preset-badge {
+    padding: 1px 3px;
+    border-radius: 3px;
+    background: var(--primary);
+    color: var(--accent-text-color, #050505);
+    font-size: 6px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 1.1;
+}
+
+.cs20-preset-count {
+    padding: 1px 4px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.07);
+    color: #888890;
+    font-size: 7.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    font-variant-numeric: tabular-nums;
+}
+
+.cs20-preset-cat.active .cs20-preset-count {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+
+.cs20-preset-subgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 1px 0 3px 6px;
+    padding-left: 6px;
+    border-left: 1.5px solid rgba(255, 255, 255, 0.08);
+}
+
+.cs20-preset-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 24px;
+    padding: 3px 6px 3px 4px;
+    border: 0;
+    border-radius: 5px;
+    background: transparent;
+    color: #8a8a92;
+    font-family: inherit;
+    font-size: 9.5px;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+    transition: all .12s ease;
+    box-sizing: border-box;
+}
+
+.cs20-preset-sub:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.cs20-preset-sub.active {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.07);
+    font-weight: 600;
+}
+
+.cs20-preset-sub.active .cs20-preset-sub-tree {
+    color: var(--primary);
+}
+
+.cs20-preset-sub-info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 0;
+    flex: 1;
+}
+
+.cs20-preset-sub-tree {
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 9px;
+    font-family: monospace;
+    flex-shrink: 0;
+}
+
+.cs20-preset-sub-name {
+    flex: 1;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cs20-preset-sub-count {
+    padding: 1px 4px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #72727a;
+    font-size: 7px;
+    font-weight: 600;
+    flex-shrink: 0;
+    margin-left: 2px;
+}
+
+.cs20-preset-sub.active .cs20-preset-sub-count {
+    background: var(--primary);
+    color: var(--accent-text-color, #050505);
+}
+
+
+.cs20-preset-gridwrap {
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    background: #0d0d10;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.cs20-preset-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 7px 9px;
+    background: #121216;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    flex-shrink: 0;
+}
+
+.cs20-preset-tool-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.cs20-preset-title-wrap {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    min-width: 0;
+}
+
+.cs20-preset-active-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: .2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cs20-preset-active-count {
+    font-size: 9px;
+    font-weight: 500;
+    color: #71717a;
+    white-space: nowrap;
+}
+
+.cs20-preset-size-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.cs20-preset-sizelabel {
+    font-size: 7.5px;
+    font-weight: 800;
+    letter-spacing: .8px;
+    color: #585862;
+}
+
+.cs20-preset-sizer {
+    width: 64px;
+    height: 3px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgba(255, 255, 255, .12);
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+.cs20-preset-sizer::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--primary) !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    border: 0;
+}
+
+.cs20-preset-chips-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+}
+.cs20-preset-chips-row::-webkit-scrollbar {
+    display: none;
+}
+
+.cs20-preset-chip {
+    padding: 3px 8px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    color: #9c9ca4;
+    font-family: inherit;
+    font-size: 9px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all .12s ease;
+}
+
+.cs20-preset-chip:hover {
+    background: rgba(255, 255, 255, 0.09);
+    color: #ffffff;
+}
+
+
+
+
+.cs20-preset-groupsel {
+    -webkit-appearance: none;
+    appearance: none;
+    max-width: 100%;
+    height: 20px;
+    padding: 0 20px 0 8px;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%239c9ca4'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 7px center;
+    color: #d8d8de;
+    font-family: inherit;
+    font-size: 9px;
+    font-weight: 600;
+    cursor: pointer;
+    text-overflow: ellipsis;
+}
+
+.cs20-preset-groupsel:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.cs20-preset-groupsel:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+
+
+.cs20-preset-groupsel option {
+    background: #1c1c1e;
+    color: #d8d8de;
+}
+
+.cs20-preset-chip.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--accent-text-color, #050505);
+    box-shadow: none;
+}
+
+.cs20-preset-grid {
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--cs20-tile, 95px), 1fr));
+    grid-auto-rows: var(--cs20-tile, 95px);
+    gap: 8px;
+    align-content: start;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.cs20-preset-grid::-webkit-scrollbar {
+    width: 4px;
+}
+.cs20-preset-grid::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+}
+
+@media (max-width: 420px) {
+    .cs20-preset-side { flex: 0 0 120px; min-width: 115px; }
+    .cs20-preset-cat { padding: 5px 6px; font-size: 10px; }
+    .cs20-preset-icon { display: none; }
+    .cs20-preset-grid { 
+        grid-template-columns: repeat(auto-fill, minmax(var(--cs20-tile, 85px), 1fr)); 
+        grid-auto-rows: var(--cs20-tile, 85px);
+        gap: 6px; 
+        padding: 6px; 
+    }
+    .cs20-preset-sizer { width: 48px; }
+}
+
+@media (max-width: 320px) {
+    .cs20-preset-side { flex: 0 0 100px; min-width: 95px; }
+    .cs20-preset-count { display: none; }
+    .cs20-preset-grid { 
+        grid-template-columns: repeat(auto-fill, minmax(var(--cs20-tile, 80px), 1fr)); 
+        grid-auto-rows: var(--cs20-tile, 80px);
+        gap: 4px; 
+        padding: 4px; 
+    }
+}
+
+.cs20-preset-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 75px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #141417;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+    transition: all .14s cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.cs20-preset-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.cs20-preset-card.selected {
+    border: 2px solid var(--primary) !important;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+.cs20-preset-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    min-height: 0;
+    background: #0d0d10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cs20-preset-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    background: transparent;
+}
+
+.cs20-preset-name {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: 16px 4px 5px;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .5) 30%, rgba(0, 0, 0, .92) 100%);
+    color: #ffffff;
+    font-size: 8.5px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: .1px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity .12s;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.cs20-preset-card:hover .cs20-preset-name {
+    color: var(--primary);
+}
+
+
+
+.cs20-preset-card.noart { background: #141417; }
+
+
+
+
+.cs20-preset-play {
+    opacity: 0;
+    transition: opacity .14s;
+    background: transparent;
+    object-fit: contain;
+    object-position: center;
+}
+
+.cs20-preset-card:hover .cs20-preset-play { opacity: 1; }
+
+.cs20-preset-motion {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-size: 6px;
+    line-height: 1;
+    padding: 2px 3px;
+    border-radius: 3px;
+    color: #cfcfcf;
+    background: rgba(0, 0, 0, .55);
+    pointer-events: none;
+    transition: opacity .14s;
+}
+
+.cs20-preset-card:hover .cs20-preset-motion { opacity: 0; }
+
+.cs20-preset-card.noart .cs20-preset-name {
+    opacity: 1;
+    top: 0;
+    padding: 4px;
+    background: none;
+    color: #8a8a8a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cs20-preset-empty {
+    grid-column: 1 / -1;
+    padding: 20px 10px;
+    color: #5c5c5c;
+    font-size: 9px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+.cs20-preset-missing {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 9px;
+    margin-bottom: 3px;
+    border: 1px solid rgba(255, 177, 74, .35);
+    border-radius: 7px;
+    background: rgba(255, 177, 74, .08);
+    color: #d8b98a;
+    font-size: 8px;
+    line-height: 1.45;
+}
+
+.cs20-preset-missing span { flex: 1; min-width: 0; }
+
+.cs20-preset-locate {
+    flex: 0 0 auto;
+    height: 22px;
+    padding: 0 9px;
+    border: 1px solid rgba(255, 177, 74, .5);
+    border-radius: 999px;
+    background: transparent;
+    color: #ffb14a;
+    font-family: inherit;
+    font-size: 7px;
+    font-weight: 900;
+    letter-spacing: .6px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.cs20-preset-locate:hover { background: rgba(255, 177, 74, .14); }
+
+
+
+.cs20-preset-newassets {
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7px 10px;
+    margin: 8px 8px 0;
+    padding: 8px 10px;
+    border: 1px solid rgba(255, 255, 255, .07);
+    border-left: 2px solid var(--primary);
+    border-radius: 8px;
+    background: #141418;
+    color: var(--text-secondary, #b9c2bb);
+    font-size: 8px;
+    line-height: 1.4;
+}
+
+.cs20-preset-newassets > span { flex: 1 1 140px; min-width: 0; }
+.cs20-newassets-title { display: block; color: #f2f2f4; font-size: 9px; font-weight: 800; letter-spacing: .1px; }
+.cs20-newassets-sub { display: block; margin-top: 1px; color: #8a8a93; font-size: 8px; font-weight: 600; }
+.cs20-newassets-actions { display: flex; flex: 0 0 auto; gap: 6px; margin-left: auto; }
+
+.cs20-newassets-done { border-left-color: var(--primary); opacity: .85; }
+
+.cs20-preset-getassets {
+    flex: 0 0 auto;
+    height: 22px;
+    padding: 0 11px;
+    border: 1px solid var(--primary);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--primary);
+    font-family: inherit;
+    font-size: 7px;
+    font-weight: 900;
+    letter-spacing: .6px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.cs20-preset-getassets:hover:not(:disabled) { background: var(--primary); color: var(--accent-text-color, #050505); }
+
+
+
+.cs20-preset-getassets:disabled { opacity: .45; cursor: default; }
+
+
+
+.cs20-preset-cancelassets {
+    flex: 0 0 auto;
+    height: 22px;
+    padding: 0 11px;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text-secondary, #b0b0b0);
+    font-family: inherit;
+    font-size: 7px;
+    font-weight: 900;
+    letter-spacing: .6px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.cs20-preset-cancelassets:hover:not(:disabled) {
+    border-color: rgba(255, 90, 90, .55);
+    color: #ff6b6b;
+}
+
+.cs20-preset-cancelassets:disabled { opacity: .45; cursor: default; }
+
+
+
+
+
+.cs20-preset-card.locked .cs20-preset-frame {
+    border: 1px dashed var(--glass-border);
+    background: rgba(255, 255, 255, .02);
+}
+
+.cs20-preset-card.locked { opacity: .72; }
+.cs20-preset-card.locked:hover { opacity: 1; }
+
+.cs20-preset-lockmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 1;
+    color: var(--text-secondary, #8a8a8a);
+    pointer-events: none;
+}
+
+.cs20-preset-card.locked:hover .cs20-preset-lockmark { color: var(--primary); }
+
+
+
+.cs20-autoplay {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    height: 20px;
+    margin: 0;
+    padding: 0 7px 0 4px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 99px;
+    background: #0d0d10;
+    color: #71717a;
+    font: inherit;
+    font-size: 7.5px;
+    font-weight: 800;
+    letter-spacing: .8px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.cs20-autoplay i {
+    position: relative;
+    flex: none;
+    width: 18px;
+    height: 10px;
+    border-radius: 99px;
+    background: #2a2a30;
+    transition: background .15s;
+}
+.cs20-autoplay i::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #8b8b92;
+    transition: left .15s, background .15s;
+}
+.cs20-autoplay:hover { color: #d4d4d8; }
+.cs20-autoplay.on { color: var(--primary, #00ff55); border-color: var(--primary, #00ff55); background: var(--primary-dim, rgba(0, 255, 85, 0.12)); }
+.cs20-autoplay.on i { background: var(--primary, #00ff55); }
+.cs20-autoplay.on i::after { left: 10px; background: #050505; }
+.cs20-preset-card.autoplaying .cs20-preset-play { opacity: 1; }
+.cs20-preset-card.autoplaying .cs20-preset-motion { opacity: 0; }
